@@ -1,0 +1,96 @@
+#parent{
+    display: grid;
+    grid-template-columns: 64% 35%;
+    gap: 10px;
+    max-width: 980px;
+    margin: auto;
+    padding: 0 25px 16px;
+    min-height: 320px;
+ 
+}
+#leftBlock{
+    padding-right: 20px;
+    border-right: 1px solid #eaeaec;
+    padding-top: 32px;
+   
+}
+#addstrip{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #eaeaec;
+    
+}
+#addstrip>div{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#addstrip>button{
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 2px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 63, 108);
+    border-color: rgb(255, 63, 108);
+    border-width: 1px;
+    border-style: solid;
+    cursor: pointer;
+}
+#offer{
+    display: block;
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 16px 18px 12px;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+    font-size: 13px;
+    position: relative;
+    
+}
+svg+p{
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-left: 30px;
+    margin-bottom: 12px;
+}
+#offer>div{
+    padding-left: 15px;
+    text-indent: -15px;
+    list-style: none;
+    white-space: normal;
+    margin-bottom: 8px;
+}   
+#offer+div{
+    padding: 8px;
+    margin-bottom: 12px;
+    background: #fff;
+    border: 1px solid #eaeaec;
+    border-radius: 4px;
+}
+#offer+div>p{
+    display: inline-block;
+}
+#bulkAction{
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    padding: 0 12px 0 10px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #282c3f;
+}
+#cartItemsList{
+    display: block;
+}
+#rightBlock{
+    vertical-align: top;
+    padding: 24px 0 0 16px;
+ 
+}
