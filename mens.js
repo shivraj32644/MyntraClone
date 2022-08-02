@@ -6,9 +6,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: 1170,
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img2.webp",
@@ -17,9 +17,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: 579,
     strikedoffprice: "2599",
-    ratin:2,
-    popular:2,
-    new:2
+    ratin: 2,
+    popular: 2,
+    new: 2,
   },
   {
     image_url: "image/img3.webp",
@@ -28,9 +28,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: 980,
     strikedoffprice: "1500",
-    ratin:3,
-    popular:3,
-    new:3
+    ratin: 3,
+    popular: 3,
+    new: 3,
   },
   {
     image_url: "image/img4.webp",
@@ -39,9 +39,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "595",
     strikedoffprice: "1000",
-    ratin:41,
-    popular:41,
-    new:41
+    ratin: 41,
+    popular: 41,
+    new: 41,
   },
   {
     image_url: "image/img5.webp",
@@ -50,9 +50,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1200",
     strikedoffprice: "1500",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img6.webp",
@@ -61,9 +61,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "452",
     strikedoffprice: "850",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img7.webp",
@@ -72,9 +72,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "745",
     strikedoffprice: "1200",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img8.webp",
@@ -83,9 +83,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "2200",
     strikedoffprice: "3500",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img9.webp",
@@ -94,9 +94,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "5440",
     strikedoffprice: "6510",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img10.webp",
@@ -105,9 +105,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "6450",
     strikedoffprice: "8000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img11.webp",
@@ -116,9 +116,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "10900",
     strikedoffprice: "12000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img12.webp",
@@ -127,9 +127,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11100",
     strikedoffprice: "12300",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img13.webp",
@@ -138,9 +138,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "16800",
     strikedoffprice: "33000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img14.webp",
@@ -149,9 +149,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "20000",
     strikedoffprice: "40000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img15.webp",
@@ -160,9 +160,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "21000",
     strikedoffprice: "50000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img16.webp",
@@ -171,9 +171,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1220",
     strikedoffprice: "3600",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img17.webp",
@@ -182,9 +182,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1800",
     strikedoffprice: "7200",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img18.webp",
@@ -193,9 +193,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "6300",
     strikedoffprice: "30000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img19.webp",
@@ -204,9 +204,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "549",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img20.webp",
@@ -215,9 +215,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "640",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img21.webp",
@@ -226,9 +226,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "963",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img22.webp",
@@ -237,9 +237,9 @@ var mensData = [
     size: "38,41,42",
     price: "450",
     strikedoffprice: "2699",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img23.webp",
@@ -248,9 +248,9 @@ var mensData = [
     size: "38,40,41",
     price: "770",
     strikedoffprice: "3299",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img24.webp",
@@ -259,9 +259,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "870",
     strikedoffprice: "4799",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img25.webp",
@@ -270,9 +270,9 @@ var mensData = [
     size: "40,41,42",
     price: "970",
     strikedoffprice: "9699",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img26.webp",
@@ -281,9 +281,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "4100",
     strikedoffprice: "4200",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img27.webp",
@@ -292,9 +292,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "5200",
     strikedoffprice: "5300",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img28.webp",
@@ -303,9 +303,9 @@ var mensData = [
     size: "38,40,41,42",
     price: "8880",
     strikedoffprice: "9999",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img29.webp",
@@ -314,9 +314,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "8562",
     strikedoffprice: "12000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img30.webp",
@@ -325,9 +325,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11000",
     strikedoffprice: "15000",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img31.webp",
@@ -336,9 +336,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11800",
     strikedoffprice: "12599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img32.webp",
@@ -347,9 +347,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "10170",
     strikedoffprice: "32599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img33.webp",
@@ -358,9 +358,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "870",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img34.webp",
@@ -369,9 +369,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "9170",
     strikedoffprice: "32599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img35.webp",
@@ -380,9 +380,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "9170",
     strikedoffprice: "22599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img36.webp",
@@ -391,9 +391,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11780",
     strikedoffprice: "23599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img37.webp",
@@ -402,9 +402,9 @@ var mensData = [
     size: "38,40,42,43",
     price: "1602",
     strikedoffprice: "42599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img38.webp",
@@ -413,9 +413,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1180",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img39.webp",
@@ -424,9 +424,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1650",
     strikedoffprice: "22599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img40.webp",
@@ -435,9 +435,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11707",
     strikedoffprice: "25599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img41.webp",
@@ -446,9 +446,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "11670",
     strikedoffprice: "25599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img42.webp",
@@ -457,9 +457,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "2170",
     strikedoffprice: "22599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img43.webp",
@@ -468,9 +468,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "3170",
     strikedoffprice: "6599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img44.webp",
@@ -479,9 +479,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "4170",
     strikedoffprice: "9599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img45.webp",
@@ -490,9 +490,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "3170",
     strikedoffprice: "6599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img46.webp",
@@ -501,9 +501,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "6070",
     strikedoffprice: "8599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img47.webp",
@@ -512,9 +512,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "5170",
     strikedoffprice: "12599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img48.webp",
@@ -523,9 +523,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1170",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img49.webp",
@@ -534,9 +534,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1170",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
   {
     image_url: "image/img50.webp",
@@ -545,9 +545,9 @@ var mensData = [
     size: "38,40,41,42,43",
     price: "1370",
     strikedoffprice: "2599",
-    ratin:1,
-    popular:2,
-    new:3
+    ratin: 1,
+    popular: 2,
+    new: 3,
   },
 ];
 
@@ -573,8 +573,8 @@ function sort() {
       b = Math.round(((b.strikedoffprice - b.price) / b.strikedoffprice) * 100);
       return b - a;
     });
-    }
-    
+  }
+
   displayData(mensData);
   console.log(mensData);
 }
@@ -590,8 +590,8 @@ function displayData(data) {
     var Dis_price = document.createElement("p");
     var Ori_price = document.createElement("p");
     var btn = document.createElement("button");
-      var discount = document.createElement("p");
-      var size = document.createElement("p");
+    var discount = document.createElement("p");
+    var size = document.createElement("p");
 
     img.setAttribute("src", element.image_url);
     brand.innerText = element.brand;
@@ -602,8 +602,8 @@ function displayData(data) {
       ((element.strikedoffprice - element.price) / element.strikedoffprice) *
         100
     );
-      discount.innerText = disPercetage + " % OFF";
-      size.innerText = element.size;
+    discount.innerText = "(" + disPercetage + " % OFF)";
+    size.innerText = "Size " + element.size;
     //   var cartLogo = document.createElement("img");
     //   cartLogo.setAttribute(
     //     "src",
@@ -620,16 +620,16 @@ function displayData(data) {
     Pricediv.setAttribute("id", "price-box");
     btn.setAttribute("id", "btn");
     name.setAttribute("id", "name");
-      brand.setAttribute("id", "brand");
-      size.setAttribute("id", "size");
-
+    brand.setAttribute("id", "brand");
+    size.setAttribute("id", "size");
+    discount.setAttribute("id", "discount");
     btn.addEventListener("click", function () {
       //
       addToCart(index);
     });
 
     Pricediv.append(Dis_price, Ori_price, discount);
-    boxdiv.append(img, btn,size, brand, name, Pricediv);
+    boxdiv.append(img, btn, size, brand, name, Pricediv);
     document.getElementById("main-box").append(boxdiv);
   });
 }
@@ -641,4 +641,5 @@ function addToCart(i) {
   });
   McartArr.push(product[0]);
   localStorage.setItem("McartData", JSON.stringify(McartArr));
+  console.log(JSON.parse(localStorage.getItem("McartData")));
 }
