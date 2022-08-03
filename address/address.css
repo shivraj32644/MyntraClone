@@ -1,0 +1,288 @@
+/* payment nevbar */
+body {
+    font-family: Whitney, Helvetica, Arial, sans-serif !important;
+    color: #424553;
+    line-height: 2.428571;
+}
+
+div {
+    display: block;
+}
+
+#headerUnderline {
+    width: 100%;
+    border-bottom: 1px solid #F5F5F6;
+    margin-bottom: 30px;
+}
+
+#header {
+    display: flex;
+    width: 92%;
+    color: rgb(105, 107, 121);
+    font-size: 10px;
+    margin: 20px auto 10px;
+    justify-content: space-between;
+}
+
+.navbarMiddle {
+    letter-spacing: 3px;
+    font-weight: bolder;
+}
+
+.navbarMiddlePayment {
+    color: #20BD99;
+    border-bottom: 2px solid #20BD99;
+}
+
+#paymentNavSecure {
+    display: flex;
+    align-items: center;
+}
+
+#paymentNavSecure img {
+    margin-right: 5px;
+}
+
+
+/* middle  */
+
+#mountRoot {
+    clear: both;
+    min-height: 420px;
+}
+.addressDesktop-base-addressLayout {
+    max-width: 1000px;
+    margin: 0 auto 24px;
+    display: flex;
+}
+.addressDesktop-base-left {
+    width: 67.5%;
+    vertical-align: top;
+    padding-right: 35px;
+    padding-top: 12px;
+}
+.addressDesktop-base-addAddressContainer {
+    width: 450px;
+    margin: auto;
+    border: 1px solid #eaeaec;
+    margin-top: 20px;
+    position: relative;
+}
+.addressFormUI-base-container {
+    padding-bottom: 70px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.addressFormUI-base-scrollable {
+    overflow-y: auto;
+    height: 90%;
+}
+.addressFormUI-base-footer {
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 8px;
+    box-shadow: 0 -1px 4px 0 #0000004d;
+}
+.addressFormUI-base-saveBtn {
+    background-color: #ff3f6c!important;
+    font-size: 14px!important;
+    border-radius: 4px!important;
+    padding: 14px!important;
+}
+.button-base-button {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background: #ff3f6c;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    border-radius: 2px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.addressFormUI-base-formHeader {
+    padding: 16px 16px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #282c3f;
+}
+.addressDesktop-base-removeMargin {
+    margin-top: 0!important;
+}
+.addressFormUI-base-form {
+    padding: 16px;
+    margin-top: 8px;
+    color: #282c3f;
+}
+.inputV2-base-inputRow {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.addressFormUI-base-inputRow {
+    margin-bottom: 16px;
+}
+.inputV2-base-label {
+    display: -webkit-box;
+    position: absolute;
+    top: 11px;
+    left: 13px;
+    color: #94969f;
+    transition-property: top;
+    transition-duration: .1s;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.inputV2-base-input, .inputV2-base-input:disabled {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: #282c3f;
+}
+.inputV2-base-input {
+    width: 100%;
+    font-size: 14px;
+    padding: 12px;
+    border: 1px solid #d4d5d9;
+    background-color: transparent;
+    font-weight: 300;
+    border-radius: 4px;
+    line-height: 14px;
+}
+.inputV2-base-errorMessage {
+    color: #ff5722;
+    padding-left: 12px;
+    font-size: 12px;
+    padding-top: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.addressDesktop-base-right {
+    width: 32.5%;
+    vertical-align: top;
+    padding-top: 8px;
+}
+.priceBlockCommon-base-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+.priceBlockCommon-base-items {
+    line-height: 15px;
+    color: #535766;
+    font-size: 12px;
+    font-weight: 600;
+}
+.priceBlockCommon-base-detailBody {
+    padding-top: 16px;
+}
+.priceBreakUp-base-orderSummary {
+    font-size: 14px;
+}
+.priceDetail-base-row {
+    margin-bottom: 12px;
+    line-height: 16px;
+}
+.priceDetail-base-value {
+    float: right;
+}
+.priceDetail-base-total .priceDetail-base-icon {
+    height: 10px;
+}
+.priceDetail-base-icon {
+    height: 9px;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.priceDetail-base-infoTextContainer {
+    display: inline-block;
+}
+.css-lnv4zc {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 2px;
+    border-width: 0px;
+    background-color: transparent;
+    color: rgb(255, 63, 108);
+    padding: 0px;
+    cursor: pointer;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    outline: 0;
+}
+.css-xjhrni {
+    box-sizing: border-box;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: flex;
+}
+.priceDetail-base-total {
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaec;
+    color: #3e4152;
+    line-height: 16px;
+}
+
+
+
+/* footer part */
+
+#footer {
+    border-top: 1px solid #F5F5F6;
+    margin: 0 0 10px 0;
+}
+
+#footer #footerContent {
+    display: flex;
+    max-width: 980px;
+    padding-top: 10px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#footer #footerContentImg img {
+    /* display: inline-block; */
+    width: 70px;
+    height: 37px;
+}
+
+#footerContent>a {
+    text-decoration: none;
+    color: #282c3f;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    /* float: right; */
+    padding: 10px 0;
+}
