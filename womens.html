@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Womens Section</title>
+
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <p>Navigation Bar</p>
+    </div>
+    <div id="path">Home / Clothing / <b>Kurtis For Women</b></div>
+    <div id="itemName">
+      <p>Kurtis For Women<span>-50 items</span></p>
+    </div>
+
+    <div id="filterBar">
+      <div><h3>FILTERS</h3></div>
+      <div>
+        <select name="" id="">
+          <option value="">Bundle</option>
+        </select>
+
+        <select name="" id="">
+          <option value="">Country of Origin</option>
+        </select>
+        <select name="" id="">
+          <option value="">Size</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Sort by :</label>
+        <select name="" id="chooseItem" onchange="sort()">
+          <option value="Recommended">Recommended</option>
+          <option value="new">What's New</option>
+          <option value="popular">Popularity</option>
+          <option value="discount">Better Discount</option>
+          <option value="hlt">Price High to Low</option>
+          <option value="lth">Price Low to High</option>
+          <option value="rating">Customer Rating</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div id="filter">
+        <div>
+          <h3>CATEGORIES</h3>
+          <input type="checkbox" />
+          <label for="">Kurtas</label><br />
+          <input type="checkbox" />
+          <label for="">Kurtas Sets</label>
+        </div>
+        <div>
+          <h3>Brand</h3>
+          <input type="checkbox" value="Allen Soley" name="brand" />
+          <label for="Allen Soley">Allen Soley</label> <br />
+
+          <input type="checkbox" value="Roadster" name="brand" />
+          <label for="Roadster">Roadster</label> <br />
+
+          <input type="checkbox" value="Louis Philippe Sport" name="brand" />
+          <label for="Louis Philippe Sport">Louis Philippe Sport</label><br />
+
+          <input type="checkbox" value="HIGHLANDER" name="brand" />
+          <label for="HIGHLANDER">HIGHLANDER</label> <br />
+
+          <input type="checkbox" value="SPYKAR" name="brand" />
+          <label for="SPYKAR">SPYKAR</label> <br />
+
+          <input type="checkbox" value="Blackberry" name="brand" />
+          <label for="Blackberry">Blackberry</label> <br />
+
+          <input type="checkbox" value="Flying Machine" name="brand" />
+          <label for="Flying Machine">Flying Machine</label> <br />
+
+          <input type="checkbox" value="U S Polo Assn." name="brand" />
+          <label for="U S Polo Assn.">U S Polo Assn.</label> <br />
+
+          <p>+402 more</p>
+        </div>
+        <div>
+          <h3>PRICE</h3>
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 279 to Rs. 5385</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 5385 to Rs. 10491</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 10491 to Rs. 15597</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 15597 to Rs. 20703</label> <br />
+        </div>
+        <div>
+          <h3>COLOR</h3>
+          <input type="checkbox" value="" name="colour" />
+          <label for=""> Blue</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">White</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Navy Blue</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Green</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Black</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Grey</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Red</label> <br />
+          <p>+38 more</p>
+        </div>
+
+        <div>
+          <h3>DISCOUNT RANGE</h3>
+          <input type="radio" value="" name="discount" />
+          <label for="">10% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">20% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">30% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">40% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">50% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">60% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">70% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">80% and above</label> <br />
+        </div>
+      </div>
+      <div id="product">
+        <div id="main-box"></div>
+        <div id="selectPage">
+          <p style="align-self: center; color: #535766">Page 1 to 1220</p>
+          <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+          </div>
+
+          <button>Next ></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="text">
+      <div>
+        <h4 style="text-align: center">BUY KURTIS FOR WOMEN</h4>
+        <p class="heading">
+          Look Alluring with Beautiful Women's Kurtis from Myntra
+        </p>
+        <br />
+        <p>
+          Well-fitted women's kurtis are a great starting piece when stepping
+          into the wonderful world of Indian ethnic wear. Not only are the
+          garments breathtakingly beautiful but come in a large variety of
+          fabrics, thread work, prints, embellishments, designs and fits. You
+          can style them to perfection without much effort.
+        </p>
+        <p>
+          Kurtas are the traditional garb of choice for both men and women in
+          many parts of southern Asia, including Sri Lanka, Pakistan, India,
+          Bangladesh, Nepal, etc. 'Kurta', in Persian, means a shirt without a
+          collar. Although initially worn by men, it later became popular among
+          women's fashion trends. Women's kurtas that have a shorter length took
+          on a new name—Kurtis.
+        </p>
+        <p>
+          Whether you like to stick to classic styles or experiment with bold,
+          contemporary designs for a fusion look, Myntra's kurtis collection has
+          it all, and more. Get your hands on the ultimate selection of women's
+          ethnic wear online before stocks run out.
+        </p>
+        <br />
+
+        <p class="heading">
+          Find the Perfect Style with Women’s Kurtis Collection Online
+        </p>
+        <p>
+          Women from all over the country have worn Kurtis. Let us take a look
+          at the styles you can grab on Myntra.
+        </p>
+        <li>
+          DESIGNER KURTIS- Kurtis are a multi-faceted clothing item and can be
+          worn with anything, right from churidars and palazzos to leggings and
+          jeans. Whether you love sporting cotton kurtis to work every day or
+          are fond of silk, crepe, georgette or even wool variants for special
+          occasions, is a matter of personal choice. Shop for hand and block
+          printed pieces to embroidered items with beads, sequins and stones.
+        </li>
+        <li>
+          KURTI SETS- Sky's the limit when styling your favourite designer
+          salwar suit, and the same applies to kurti sets. Wear our women’s
+          kurtis collection one way today and another way tomorrow. Show your
+          creativity as much as possible. No matter what the occasion, your
+          style or budget, our Palazzo kurti sets will impress you to no end.
+        </li>
+
+        <p class="heading">
+          Tips on Experimenting with Women’s Kurtis on Myntra
+        </p>
+        <p>
+          Here are a few of our style recommendations when shopping for women’s
+          kurtis on Myntra.
+        </p>
+
+        <li>
+          Try women’s kurtis in bright, solid colours like fluorescent green or
+          fiery red and a buttoned front placket coupled up with roll-up
+          sleeves. These can easily pair with jeggings in a complementary colour
+          and ballet flats.
+        </li>
+        <li>
+          Choose cotton kurtis with simple embroidered detail against a light
+          colour background and asymmetric hem. Pair them with distressed jeans
+          and oversized sunglasses for a fun but practical look that will
+          delight both you and your pals.
+        </li>
+        <li>
+          Beat the summer heat in sleeveless chikankari women’s kurtis in pastel
+          colours. Pair them with white palazzos and open sandals for a look
+          that will keep you feeling cool.
+        </li>
+        <li>
+          Switch up your designer Patiala suits with lightweight kurtis and
+          jeans combination. Alternate the bottoms with harem pants in vibrant
+          colours. Carry a large leather handbag to bring the look together.
+        </li>
+        <p class="heading">Shop for Women's Kurtis Online</p>
+        <p>
+          Shopping for clothing online can seem overwhelming to more people than
+          one might think. But Myntra does everything possible to guarantee you
+          a smooth shopping experience. Do not forget to use the platform's
+          30-day return policy, quick delivery feature, cash on delivery
+          facility, and more.
+        </p>
+        <p>
+          Women’s kurtis of all shapes, sizes and colours await you. Do not miss
+          out on the opportunity to look resplendent in the stunning ethnic
+          wear. Make all your favourite styles your own while giving them your
+          individual styling touch. Shop for kurtis, sarees, Patiala suits and
+          more online on Myntra and satisfy all your wardrobe needs with zero
+          hassles!
+        </p>
+
+        <br />
+
+        <h6>OTHER CATEGORIES</h6>
+        <h6>
+          Tops, Blouse Designs,Saree, Ethnic Wear, Lehenga, Kurtas, Women Jeans
+        </h6>
+        <h4>VIDEO: How To Wear Your Kurta in 3 Different Ways</h4>
+        <iframe
+          width="288"
+          height="288"
+          src="https://www.youtube.com/embed/VbMRAH7-DdA"
+          title="How To Wear Your Kurta in 3 Different Ways"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          In this Myntra Picks video from the Look Good team, we see fashion
+          stylist Pratibha style a simple buttoned down kurta from Myntra in
+          three eye-catching ways. So, let’s learn how to pair women’s kurtas
+          with other outfits and accessories to create stunning looks.
+        </p>
+      </div>
+      <div>
+        <h4>KURTIS FOR WOMEN PRICE LIST</h4>
+        <table>
+          <tr>
+            <th>Kurtis For Women</th>
+            <th>PRICE (RS)</th>
+          </tr>
+          <tr>
+            <td>Varanga Women Navy Blue & Beige Ethnic Motifs Printed Keyhole Neck Gotta Patti Kurta</td>
+            <td>Rs. 524</td>
+          </tr>
+          <tr>
+            <td>
+              KALINI Women Pink Floral Printed Kurta with Trousers & With Dupatta
+            </td>
+            <td>Rs. 626</td>
+          </tr>
+          <tr>
+            <td>Vishudh Women Black & Golden Printed Straight Kurta</td>
+            <td>Rs. 699</td>
+          </tr>
+          <tr>
+            <td>
+              KALINI Women White Dyed Anarkali Kurta
+            </td>
+            <td>Rs. 911</td>
+          </tr>
+          <tr>
+            <td>Anouk Women Pink Embroidered Kurta with Palazzos</td>
+            <td>Rs. 659</td>
+          </tr>
+          <tr>
+            <td>Libas Hunter Green Patterned Viscose Pathani Kurta With Shirt Collar</td>
+            <td>Rs. 699</td>
+          </tr>
+          <tr>
+            <td>
+              Indo Era Women White Floral Yoke Design Regular Mirror Work Kurta with Palazzos & With Dupatta
+            </td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td>KALINI Women Yellow Ethnic Motifs Printed Pure Cotton Kurta with Trousers & With Dupatta</td>
+            <td>Rs. 899</td>
+          </tr>
+          <tr>
+            <td>
+              Soch Women Off White Embellished Straight Fit Cotton Kurta
+            </td>
+            <td>Rs. 574</td>
+          </tr>
+          <tr>
+            <td>Indo Era Women Navy Blue & Maroon Printed Pure Cotton Kurta with Trousers & Dupatta</td>
+            <td>Rs. 593</td>
+          </tr>
+        </table>
+        <p>Data last updated on 01/08/2022</p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div>
+        <h5>ONLINE SHOPINT</h5>
+        <p>Mens</p>
+        <p>Womens</p>
+        <p>Kids</p>
+        <p>Home & Living</p>
+        <p>Beauty</p>
+        <p>Gift Card</p>
+        <p>Myntra Insider</p>
+        <br /><br />
+        <h5>USEFUL LINKS</h5>
+        <p>Blogs</p>
+        <p>Careers</p>
+        <p>Site Map</p>
+        <p>Corporate Information</p>
+        <p>Whitehat</p>
+      </div>
+      <div>
+        <h5>CUSTOMER POLICIES</h5>
+        <p>Contact Us</p>
+        <p>FAQ</p>
+        <p>T&C</p>
+        <p>Term Of Use</p>
+        <p>Track Order</p>
+        <p>Shiping</p>
+        <p>Cancellation</p>
+        <p>Return</p>
+        <p>Privacy policy</p>
+        <p>Grievance Officer</p>
+      </div>
+      <div>
+        <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+        <div id="store">
+          <img
+            src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+            alt=""
+          />
+        </div>
+
+        <h5>KEEP ON TOUCH</h5>
+        <div id="socialmedialogo">
+          <img
+            src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+            alt=""
+          />
+          <p><b>100% ORIGINAL</b> guaranteed for all products at myntra.com</p>
+        </div>
+        <div>
+          <img
+            src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
+            alt=""
+          />
+          <p><b>Return within 30 Days</b> of receiving your order</p>
+        </div>
+      </div>
+    </div>
+    <div id="popularSearch">
+      <p>
+        Apaar | Sharma | Adidas | Arrow | Fila | Online Shopping | Nike | Pepe
+        Jeans | Puma | United Colors Of Benetton | Fastrack | Shorts | Being
+        Human | Skirts | Woodland | Supra | Dresses | Winter Wear | Sweatshirts
+        For Men | Winter Jackets For Men | Chinos | Shoes | Men Blue & Grey
+        Checked Casual Shir | Shirts For Men | Arbaaz | Clothing | Jewellery | T
+        Shirts | Bags | Watches | Caps | Shirts | Backpacks | Flip Flops |
+        Shirts | Dresses | Party Dresses | Puma Tshirts | Woodland Shoes | Titan
+        Watches | Fastrack Watches | Wrangler Shirts | Adidas Tshirts | Nike
+        Shoes | Roadster Shirts | Casual Shoes | Running Shoes | Nike Sports
+        Shoes | Jeans | Being Human Tshirts
+      </p>
+    </div>
+    <div id="last">
+      <p>In case of any concern ,<span>Contact Us</span></p>
+      <p>© 2022 www.myntra.com. All rights reserved</p>
+    </div>
+  </body>
+</html>
+<script src="womens.js"></script>

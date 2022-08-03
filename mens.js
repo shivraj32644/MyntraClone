@@ -555,6 +555,7 @@ window.addEventListener("load", function () {
   displayData(mensData);
 });
 
+
 function sort() {
   var value = document.getElementById("chooseItem").value;
   
