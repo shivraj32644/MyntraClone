@@ -13,17 +13,59 @@
   justify-content: space-between;
 }
 #filterBar div:nth-child(1) {
-  margin-left: 20px;
+  margin-left: 10px;
+  align-self: center;
 }
 #filterBar div:nth-child(2) {
+  margin-left: -100px;
   display: flex;
+  justify-content: center;
 }
-#filterBar div:nth-child(3) {
-  margin-right: 60px;
+#filterBar div:nth-child(3)  {
+  margin-right: 10px;
+  align-self: center;
+  border: 1px solid rgba(0, 0, 0, 0.307);
 }
+#filterBar div:nth-child(3) label  {
+  margin-right: -10px;
+  padding: 0px 10px;
+}
+#filterBar select{
+  margin: 8px;
+  border: 0px;
+  /* height: 10px; */
+  align-self: center;
+  /* border-collapse: collapse; */
+}
+#filterBar p{
+  /* border: 0px; */
+  /* height: 10px; */
+  align-self: center;
+  
+  /* border-collapse: collapse; */
+}
+#filterBar  div:nth-child(2) select:hover{
+  border: 1px solid rgba(0, 0, 0, 0.048);
+  background-color: #8787872d;
+  border-radius: 10px;
+}
+#filterBar div:nth-child(3) select  {
+  /* border: 2px solid teal; */
+  height: 30px;
+  
+}
+#filterBar div:nth-child(3) select:hover  {
+  /* border: 2px solid teal; */
+  cursor: pointer;
+  /* display: block; */
+  
+}
+
 
 #parent {
   display: flex;
+  /* position: relative; */
+  /* border: 5px solid black; */
 }
 #parent > div > div > p {
   color: red;
@@ -31,16 +73,24 @@
 }
 #filter {
   border: 2px solid green;
+  /* height: 1300px; */
+  /* position: sticky; */
+  /* overflow: hidden; */
+  
 }
 
 #filter div {
-  height: 300px;
+  /* height: 300px; */
   width: 230px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.321);
 }
 #product {
   border: 2px solid rgb(0, 68, 255);
+  max-height: 1100px;
+  /* overflow: scroll; */
+  overflow:auto;
 }
+
 #main-box {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -75,36 +125,37 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.23);
 }
 
-#btn {
-  height: 30px;
+ #btn {
+  height: 35px; 
   width: 90%;
   margin: auto;
   display: flex;
 
   justify-content: center;
-  margin-left: 5px;
-  margin-right: 5px;
+  
   margin-top: 10px;
   margin-bottom: 10px;
 
   font-size: 13px;
   font-family: "Roboto", sans-serif;
   border: 1px solid rgba(0, 0, 0, 0.27);
-  border-radius: 6px;
+  
   cursor: pointer;
   background-color: white;
-}
-#btn > p {
-  border: 2px solid teal;
-}
+  
+ }  
+
+
+
+
 #btn:hover {
   border: 1px solid black;
 }
-/* #btn img {
-  height: 20px;
-  align-self: center;
-  margin-right: 10px;
-} */
+#btn img {
+  height: 5px;
+  /* align-self: center; */
+  /* margin-right: 10px; */
+}
 #name {
   margin-left: 10px;
   margin-right: 30px;
@@ -212,6 +263,66 @@ td {
 }
 #itemName span {
   color: #878b94;
+}
+
+
+#bottom >div:nth-child(4){
+  /* border: 2px solid teal; */
+  width: 25%;
+}
+#bottom >div:nth-child(4) img{
+  
+  width: 20%;
+  height: 20%;
+}
+#bottom >div:nth-child(4) p{
+   
+  margin: auto;
+
+}
+#bottom p{
+  /* border: 2px solid teal; */
+  margin-top: -10px;
+}
+#selectPage{
+  display: flex;
+  
+  border-top: 1px solid rgba(0, 0, 0, 0.41);
+}
+#selectPage>div{
+  height: 25px;
+  /* width: 20px; */
+  display: flex;
+  margin: 20px 50px 20px 300px;
+  align-self: center;
+  text-align: center;
+}
+#selectPage>div>div{
+  margin: 0px 5px;
+  width: 30px;
+  /* height: 30px; */
+  align-self: center;
+  text-align: center;
+}
+#selectPage+p{
+  color: black;
+  border: 2px solid teal;
+}
+#selectPage>button{
+  height: 35%;
+  width: 100px;
+  align-self: center;
+  margin-left: 50px;
+  background-color: white;
+  border: 1px solid #00000077;
+}
+#selectPage>div>div:hover{
+  border: 2px solid rgba(0, 0, 0, 0.732);
+  
+}
+#selectPage>div>div:first-child{
+    background-color: black;
+    color: white;
 }
 @media screen and (max-width: 1435px) {
   #main-box {
