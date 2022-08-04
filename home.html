@@ -11,31 +11,73 @@
     <link rel="stylesheet" href="home.css" />
     </head>
   <body>
-    <!-- Nav-Bar -->
+        <!-- Nav-Bar -->
     <header id="Home-headerEl"></header>
     <!-- End Of Nav-Bar -->
 
     <main>
-      <div class="mySlides fade">
-        <img
-          src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/19/bc0bb077-6ca5-414f-a30a-b7f8e4e2e8c11626700392540-H-N_Desk_Banner--1-.jpg"
-          style="width: 100%"
-        />
+      <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1" />
+          <input type="radio" name="radio-btn" id="radio2" />
+          <input type="radio" name="radio-btn" id="radio3" />
+          <input type="radio" name="radio-btn" id="radio4" />
+          <input type="radio" name="radio-btn" id="radio5" />
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img
+              src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/1/2f6c8211-ac9e-4998-a4e8-bc16fea4cf2c1646124148372-HRX_Desk_Banner.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/1/391e3197-027d-4440-a0c4-b4e2d7ee494a1646139673447-H-N_Desk_Banner--3-.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/3/1/31200885-2552-4f5a-8a92-be464905ce181646151056720-MFH-Desktop-Banner-.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/2/28/349419f2-6b66-4b22-8135-f46c13104a4d1646060784174-Workwear-Collection_Dk.jpg"
+              alt=""
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/11/16/11cc5325-37c6-4490-9adb-6f09ccb2a0781637049244895-luxe-banner.jpg"
+              alt=""
+            />
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+          <label for="radio5" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
       </div>
-
-      <div class="mySlides fade">
-        <img
-          src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/19/0561c26e-e90f-49e4-ba4f-3158a97179f21626700545599-Occasion_wear_Desk.jpg"
-          style="width: 100%"
-        />
-      </div>
-
-      <div class="mySlides fade">
-        <img
-          src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2021/7/19/53a9d49b-85d7-40d4-a393-98435d3d04e31626700661018-cat-fest-dk-april.jpg"
-          style="width: 100%"
-        />
-      </div>
+      <!--image slider end-->
 
 
       <!-- Products-ShowCase -->
@@ -612,3 +654,13 @@
 
      </body>
 </html>
+<script>
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById("radio" +counter).checked=true;
+    counter++;
+    if(counter>5){
+      counter=1;
+    }
+  },5000);
+</script>
