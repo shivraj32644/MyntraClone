@@ -648,7 +648,7 @@ function sort() {
 }
 
 function displayData(data) {
-  document.getElementById("main-box").innerText = "";
+  document.getElementById("product").innerText = "";
   data.map(function (element, index) {
     var boxdiv = document.createElement("div");
     var img = document.createElement("img");
@@ -689,7 +689,7 @@ function displayData(data) {
 
     Pricediv.append(Dis_price, Ori_price, discount);
     boxdiv.append(img, btn, size, brand, name, Pricediv);
-    document.getElementById("main-box").append(boxdiv);
+    document.getElementById("product").append(boxdiv);
   });
 }
 

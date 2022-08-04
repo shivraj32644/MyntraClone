@@ -7,6 +7,7 @@
     <title>Womens Section</title>
 
     <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./womens.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -55,69 +56,102 @@
       <div id="filter">
         <div>
           <h3>CATEGORIES</h3>
-          <input type="checkbox" />
-          <label for="">Kurtas</label><br />
-          <input type="checkbox" />
-          <label for="">Kurtas Sets</label>
+          <label class="checkbox-container">Kurtas
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Kurtas Sets
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
         </div>
         <div>
           <h3>Brand</h3>
-          <input type="checkbox" value="Allen Soley" name="brand" />
-          <label for="Allen Soley">Allen Soley</label> <br />
+          <label class="checkbox-container">7Threads
+            <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">Ethinic Basket
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">KALINI
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">Anouk
+              <input type="checkbox">
+              <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container"> Indo Era
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container"> Varanga
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container"> Sangria
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container">  1 Stop Fashion
+                <input type="checkbox">
+                <span class="checkmark"></span>
+            </label>
+            
 
-          <input type="checkbox" value="Roadster" name="brand" />
-          <label for="Roadster">Roadster</label> <br />
-
-          <input type="checkbox" value="Louis Philippe Sport" name="brand" />
-          <label for="Louis Philippe Sport">Louis Philippe Sport</label><br />
-
-          <input type="checkbox" value="HIGHLANDER" name="brand" />
-          <label for="HIGHLANDER">HIGHLANDER</label> <br />
-
-          <input type="checkbox" value="SPYKAR" name="brand" />
-          <label for="SPYKAR">SPYKAR</label> <br />
-
-          <input type="checkbox" value="Blackberry" name="brand" />
-          <label for="Blackberry">Blackberry</label> <br />
-
-          <input type="checkbox" value="Flying Machine" name="brand" />
-          <label for="Flying Machine">Flying Machine</label> <br />
-
-          <input type="checkbox" value="U S Polo Assn." name="brand" />
-          <label for="U S Polo Assn.">U S Polo Assn.</label> <br />
-
-          <p>+402 more</p>
+          <p>+654 more</p> 
         </div>
         <div>
           <h3>PRICE</h3>
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 279 to Rs. 5385</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 5385 to Rs. 10491</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 10491 to Rs. 15597</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 15597 to Rs. 20703</label> <br />
+          <label class="checkbox-container">Rs. 279 to Rs. 5385
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 5385 to Rs. 10491
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 10491 to Rs. 15597
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 15597 to Rs. 20703
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
         </div>
         <div>
           <h3>COLOR</h3>
-          <input type="checkbox" value="" name="colour" />
-          <label for=""> Blue</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">White</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Navy Blue</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Green</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Black</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Grey</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Red</label> <br />
+          <label class="checkbox-container">Blue
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">White
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Navy Blue
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Green
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Black
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Grey
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Red
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
           <p>+38 more</p>
         </div>
 
@@ -138,35 +172,18 @@
           <input type="radio" value="" name="discount" />
           <label for="">70% and above</label> <br />
           <input type="radio" value="" name="discount" />
-          <label for="">80% and above</label> <br />
+          <label for="">80% and above</label> <br /><br>
         </div>
       </div>
       <div id="product">
-        <div id="main-box"></div>
-        <div id="selectPage">
-          <p style="align-self: center; color: #535766">Page 1 to 1220</p>
-          <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-          </div>
-
-          <button>Next ></button>
-        </div>
+        
       </div>
     </div>
 
     <div id="text">
       <div>
         <h4 style="text-align: center">BUY KURTIS FOR WOMEN</h4>
-        <p class="heading">
+        <p style="font-size:21px ;">
           Look Alluring with Beautiful Women's Kurtis from Myntra
         </p>
         <br />
@@ -193,7 +210,7 @@
         </p>
         <br />
 
-        <p class="heading">
+        <p style="font-size:21px ;">
           Find the Perfect Style with Women’s Kurtis Collection Online
         </p>
         <p>
@@ -216,7 +233,7 @@
           style or budget, our Palazzo kurti sets will impress you to no end.
         </li>
 
-        <p class="heading">
+        <p style="font-size:21px ;">
           Tips on Experimenting with Women’s Kurtis on Myntra
         </p>
         <p>
@@ -246,7 +263,7 @@
           jeans combination. Alternate the bottoms with harem pants in vibrant
           colours. Carry a large leather handbag to bring the look together.
         </li>
-        <p class="heading">Shop for Women's Kurtis Online</p>
+        <p style="font-size:21px ;">Shop for Women's Kurtis Online</p>
         <p>
           Shopping for clothing online can seem overwhelming to more people than
           one might think. But Myntra does everything possible to guarantee you
@@ -265,8 +282,8 @@
 
         <br />
 
-        <h6>OTHER CATEGORIES</h6>
-        <h6>
+        <h6 style="font-size:13px ;">OTHER CATEGORIES</h6>
+        <h6 style="font-size:13px ;">
           Tops, Blouse Designs,Saree, Ethnic Wear, Lehenga, Kurtas, Women Jeans
         </h6>
         <h4>VIDEO: How To Wear Your Kurta in 3 Different Ways</h4>
