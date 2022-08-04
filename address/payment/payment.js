@@ -5,7 +5,14 @@ function showCard(){
     var x = document.querySelector("form");
     document.querySelector("#card").style.color = "red";
     document.querySelector("#cod").style.color = "black";
+    document.querySelector("#cod").style.backgroundColor = "#f4f4f5";
+    document.querySelector("#card").style.backgroundColor = "white";
     x.innerHTML = form;
+    var btn = document.querySelector(".payNowAjax-base-actionButton");
+    btn.addEventListener("click", function(){
+        event.preventDefault();
+        location = "https://www.myntra.com";
+    })
 }
 document.getElementById("cod").addEventListener("click", showCod);
 function showCod(){
@@ -14,6 +21,9 @@ function showCod(){
 
     document.querySelector("#card").style.color = "black";
     document.querySelector("#cod").style.color = "red";
+    document.querySelector("#card").style.backgroundColor = "#f4f4f5";
+    document.querySelector("#cod").style.backgroundColor = "white";
+
     var div = document.createElement("div");
     var headingDiv = document.createElement("div");
     headingDiv.innerText = "Pay on delivery (Cash/Card/UPI)";
@@ -27,5 +37,11 @@ function showCod(){
     var btn = document.createElement("button");
     btn.setAttribute("class", "payNowAjax-base-actionButton");
     btn.innerHTML = placeOrderBtn;
+    // var formbtn = document.querySelector(".payNowAjax-base-actionButton");
+    btn.addEventListener("click", function(){
+        event.preventDefault();
+        alert("Order confirmed")
+        location = "https://www.myntra.com/";
+    });
     form.append(div, btn);
 }

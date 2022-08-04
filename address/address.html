@@ -39,91 +39,19 @@
                                 <div class="addressDesktop-base-left">
                                     <div class="addressDesktop-base-addAddressContainer">
                                         <div class="addressFormUI-base-container">
-                                            <div class="addressFormUI-base-scrollable">
-                                                <div class="addressFormUI-base-formHeader">CONTACT DETAILS</div>
-                                                <div class="addressFormUI-base-form addressDesktop-base-removeMargin">
-                                                    <div class="inputV2-base-inputRow addressFormUI-base-inputRow">
-                                                        <label for="name" class="inputV2-base-label">Name*</label>
-                                                        <input class="inputV2-base-input " id="name" type="text">
-                                                        <div class="inputV2-base-errorMessage ">This is a mandatory
-                                                            field</div>
-                                                    </div>
-                                                    <div class="inputV2-base-inputRow ">
-                                                        <label for="mobile" class="inputV2-base-label">Mobile
-                                                            No*</label>
-                                                        <input class="inputV2-base-input " id="mobile" type="tel"
-                                                            maxlength="10">
-                                                    </div>
-                                                </div>
-                                                <div class="addressFormUI-base-formHeader">ADDRESS</div>
-                                                <div class="addressFormUI-base-form addressDesktop-base-removeMargin">
-                                                    <div class="addressFormUI-base-pincodeBlock">
-                                                        <div class="addressFormUI-base-inputContainer">
-                                                            <div class="inputV2-base-inputRow ">
-                                                                <label for="pincode" class="inputV2-base-label">Pin
-                                                                    Code*</label>
-                                                                <input class="inputV2-base-input " id="pincode"
-                                                                    type="tel" maxlength="6">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="inputV2-base-inputRow addressFormUI-base-inputRow">
-                                                        <label for="streetAddress" class="inputV2-base-label">Address
-                                                            (House No, Building, Street, Area)*</label>
-                                                        <input class="inputV2-base-input " id="streetAddress"
-                                                            type="text" row="3">
-                                                    </div>
-                                                    <div class="localityOptions-base-localityBlock" tabindex="-1">
-                                                        <div class="inputV2-base-inputRow ">
-                                                            <label for="locality" class="inputV2-base-label">Locality /
-                                                                Town*</label>
-                                                            <input class="inputV2-base-input " id="locality"
-                                                                type="text">
-                                                        </div>
-                                                    </div>
-                                                    <div class="addressFormUI-base-cityContainer">
-                                                        <div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
-                                                            <label for="city" class="inputV2-base-label">City /
-                                                                District*</label>
-                                                            <input class="inputV2-base-input " id="city" type="text"
-                                                                disabled="">
-                                                        </div>
-                                                        <div class="inputV2-base-inputRow addressFormUI-base-halfWidth">
-                                                            <label for="state" class="inputV2-base-label">State*</label>
-                                                            <input class="inputV2-base-input " id="state" type="text"
-                                                                disabled="">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="addressFormUI-base-formHeader">SAVE ADDRESS AS</div>
-                                                <div class="addressFormUI-base-form addressDesktop-base-removeMargin">
-                                                    <div class="addressFormUI-base-addressTypes">
-                                                        <div class="addressFormUI-base-addressTypeIcon addressFormUI-base-selectedAddressType"
-                                                            id="addressType-home" data-value="HOME">Home</div>
-                                                        <div class="addressFormUI-base-addressTypeIcon "
-                                                            id="addressType-office" data-value="OFFICE">Work</div>
-                                                        <div class="addressFormUI-base-error"></div>
-                                                    </div>
-                                                </div>
-                                                <div class="addressFormUI-base-form addressDesktop-base-removeMargin">
-                                                    <div class="addressFormUI-base-isDefault" id="isDefault-icon"
-                                                        data-value="undefined">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            viewBox="0 0 16 16" class="addressFormUI-base-checkboxIcon">
-                                                            <path fill-rule="nonzero"
-                                                                d="M14.85 2.14v11.71a1 1 0 0 1-1 1H2.14a1 1 0 0 1-1-1V2.14a1 1 0 0 1 1-1h11.71a1 1 0 0 1 1 1zM14.222 0H1.778C.8 0 0 .8 0 1.778v12.444C0 15.2.8 16 1.778 16h12.444C15.2 16 16 15.2 16 14.222V1.778C16 .8 15.2 0 14.222 0z">
-                                                            </path>
-                                                        </svg>
-                                                        <span class="addressFormUI-base-defaultAddress">Make this my
-                                                            default address</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="addressFormUI-base-footer">
-                                                <div data-testid="button"
-                                                    class="button-base-button addressFormUI-base-saveBtn ">ADD ADDRESS
-                                                </div>
-                                            </div>
+                                            <form action="">
+                                                <label for="">CONTACT DETAILS</label><br>
+                                                <input type="text" placeholder="Name*"><br>
+                                                <input type="number" placeholder="Mobile No.*"><br>
+                                                <label for=""> ADDRESS </label><br>
+                                                <input type="text" name="pin" pattern="[0-9]{4}" maxlength="6" placeholder="Pin Code*"><br>
+                                                <input type="text" placeholder="Address (House No, Building, Street, Area)*"><br>
+                                                <input type="text" placeholder="City / District*">
+                                                <input type="text" placeholder="State*"><br>
+                                                <label for="">SAVE ADDRESS AS</label><br>
+                                                <input type="checkbox" name="" id=""><span>Make this my default address</span><br>
+                                                <button type="submit" class="button-base-button">ADD ADDRESS</button>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -223,3 +151,9 @@
 </body>
 
 </html>
+<script>
+    document.querySelector("form").addEventListener("submit", function(){
+        event.preventDefault();
+        location = "payment/payment.html";
+    })
+</script>
