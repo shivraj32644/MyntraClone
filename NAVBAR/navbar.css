@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-size: cover;
+  background-position: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: rgb(211, 211, 211);
+font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .3px;
+  font-weight: 500;
+ 
+}
+.menu-bar {
+  /* background: white;
+  text-align: center;
+  display: inline; */
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  background-color: white;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  box-sizing: inherit;
+  height: 80px;
+ 
+}
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  height: fit-content;
+  width: max-content;
+}
+.menu-bar ul li {
+  width: 80px;
+  margin: 15px;
+  padding: 15px;
+  margin-right: 0%;
+  font-weight: 500;
+}
+input {
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 90px;
+  width: 300px;
+  padding: 5px 10px;
+}
+img {
+  height: 60px;
+  width: 60px;
+  margin-top: 15px;
+}
+.menu-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+.sub-menu-1 {
+  display: none;
+  font-weight: bold;
+}
+.menHover:hover {
+  border-bottom: 4px solid rgb(238, 0, 119);
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  display: flex;
+  position: absolute;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
+}
+.menu-bar ul li:hover .sub-menu-1 ul {
+  display: block;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 150px;
+  padding: 1px 5px;
+  background: transparent;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a h4 {
+  color: rgb(238, 0, 119);
+}
+ul > li:nth-child(5) {
+  height: fit-content;
+  width: max-content;
+}
+.pro {
+  height: fit-content;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+.pro > img {
+  height: 20px;
+  width: 20px;
+  /* border: 2px solid crimson; */
+}
+#Profile-Div {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
