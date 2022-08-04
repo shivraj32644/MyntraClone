@@ -8,10 +8,12 @@ body {
   background-position: center;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-
-  font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Helvetica, Arial, sans-serif;
+  background-color: rgb(211, 211, 211);
+font-size: 14px;
   -webkit-font-smoothing: antialiased;
+  letter-spacing: .3px;
+  font-weight: 500;
+ 
 }
 .menu-bar {
   /* background: white;
@@ -27,6 +29,7 @@ body {
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
   box-sizing: inherit;
   height: 80px;
+ 
 }
 .menu-bar ul {
   display: inline-flex;
@@ -39,6 +42,7 @@ body {
   margin: 15px;
   padding: 15px;
   margin-right: 0%;
+  font-weight: 500;
 }
 input {
   height: 30px;
@@ -60,21 +64,27 @@ img {
   display: none;
   font-weight: bold;
 }
-
+.menHover:hover {
+  border-bottom: 4px solid rgb(238, 0, 119);
+}
 .menu-bar ul li:hover .sub-menu-1 {
-  display: block;
+  display: flex;
   position: absolute;
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 12px;
+  background-color: rgb(255, 255, 255);
 }
 .menu-bar ul li:hover .sub-menu-1 ul {
   display: block;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li {
   width: 150px;
-  padding: 10px;
+  padding: 1px 5px;
   background: transparent;
   text-align: left;
 }
-.menu-bar ul li:hover .sub-menu-1 ul li a {
+.menu-bar ul li:hover .sub-menu-1 ul li a h4 {
   color: rgb(238, 0, 119);
 }
 ul > li:nth-child(5) {

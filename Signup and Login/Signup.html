@@ -40,6 +40,15 @@
       #get {
         color: #ff3c6f;
       }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
     </style>
   </head>
   <body>
@@ -58,7 +67,7 @@
             <h2>Signup</h2>
           </div>
 
-          <input id="inp" type="number" placeholder=" +91 | Mobile Number*" />
+          <input id="inp" type="text" placeholder="Mobile Number*" />
 
           <br />
           <div id="child2">
@@ -74,9 +83,9 @@
             </p>
           </div>
           <br />
-          
-            <button >CONTINUE</button>
-          
+
+          <button type="submit">CONTINUE</button>
+
           <br />
           <p>Have trouble logging in? <span id="get">Get Help</span></p>
         </div>
@@ -84,6 +93,10 @@
     </div>
   </body>
 </html>
-
 <script>
-  
+  document.querySelector("form").addEventListener("submit", function () {
+    event.preventDefault();
+    alert("OTP is 1234");
+    location = "otp.html";
+  });
+</script>

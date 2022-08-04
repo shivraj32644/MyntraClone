@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP</title>
     <style>
-       
       #parent {
         /* border: 6px solid crimson; */
         width: 30%;
         height: 550px;
-        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-      margin-left: 35%;
-    }
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+          rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        margin-left: 35%;
+      }
       .inp {
         display: flex;
         /* margin: 20px; */
@@ -34,7 +34,15 @@
       }
       #child2 {
         display: flex;
-        
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
       }
     </style>
   </head>
@@ -51,22 +59,52 @@
         <br />
         <br />
         <div class="inp">
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
+          <input
+            style="width: 10%; height: 40px"
+            type="number"
+            min="0"
+            max="9"
+          />
+          <input
+            style="width: 10%; height: 40px"
+            type="number"
+            min="0"
+            max="9"
+          />
+          <input
+            style="width: 10%; height: 40px"
+            type="number"
+            min="0"
+            max="9"
+          />
+          <input
+            style="width: 10%; height: 40px"
+            type="number"
+            min="0"
+            max="9"
+          />
         </div>
         <br />
         <p style="color: #ff667a">RESEND OTP</p>
         <br />
+        <input type="submit" value="submit" />
         <div id="child2">
           <p>Log in using</p>
           <p style="color: #ff667a">Password</p>
         </div>
 
         <br />
-        <p>Having trouble logging in? <span style="color: #ff667a">Get help</span></p>
+        <p>
+          Having trouble logging in?
+          <span style="color: #ff667a">Get help</span>
+        </p>
       </form>
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("form").addEventListener("submit", function () {
+    event.preventDefault();
+    location = "Signup.html";
+  });
+</script>
