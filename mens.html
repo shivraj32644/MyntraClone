@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mens Section</title>
+
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="navbar">
+      <p>nav bar</p>
+    </div>
+    <div id="path">Home / Clothing / <b>Mens</b></div>
+    <div id="itemName">
+      <p>Mens Clothes <span>-50 items</span></p>
+    </div>
+
+    <div id="filterBar">
+      <div><h3>FILTERS</h3></div>
+      <div>
+        <select name="" id="">
+          <option value="">Add Ones</option>
+        </select>
+        <select name="" id="">
+          <option value="">Bundle</option>
+        </select>
+        <select name="" id="">
+          <option value="">Character</option>
+        </select>
+        <select name="" id="">
+          <option value="">Collar</option>
+        </select>
+        <select name="" id="">
+          <option value="">Country of Origin</option>
+        </select>
+        <select name="" id="">
+          <option value="">Fabric</option>
+        </select>
+        <select name="" id="">
+          <option value="">Fabric 2</option>
+        </select>
+        <p> <b>+17 more</b></p>
+      </div>
+      <div>
+        <label for="">Sort by :</label>
+        <select name="" id="chooseItem" onchange="sort()">
+          <option value="Recommended">Recommended</option>
+          <option value="new">What's New</option>
+          <option value="popular">Popularity</option>
+          <option value="discount">Better Discount</option>
+          <option value="hlt">Price High to Low</option>
+          <option value="lth">Price Low to High</option>
+          <option value="rating">Customer Rating</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="parent">
+      <div id="filter">
+        <div>
+          <h3>Brand</h3>
+          <input type="checkbox" value="Allen Soley" name="brand" />
+          <label for="Allen Soley">Allen Soley</label> <br />
+
+          <input type="checkbox" value="Roadster" name="brand" />
+          <label for="Roadster">Roadster</label> <br />
+
+          <input type="checkbox" value="Louis Philippe Sport" name="brand" />
+          <label for="Louis Philippe Sport">Louis Philippe Sport</label><br />
+
+          <input type="checkbox" value="HIGHLANDER" name="brand" />
+          <label for="HIGHLANDER">HIGHLANDER</label> <br />
+
+          <input type="checkbox" value="SPYKAR" name="brand" />
+          <label for="SPYKAR">SPYKAR</label> <br />
+
+          <input type="checkbox" value="Blackberry" name="brand" />
+          <label for="Blackberry">Blackberry</label> <br />
+
+          <input type="checkbox" value="Flying Machine" name="brand" />
+          <label for="Flying Machine">Flying Machine</label> <br />
+
+          <input type="checkbox" value="U S Polo Assn." name="brand" />
+          <label for="U S Polo Assn.">U S Polo Assn.</label> <br />
+
+          <p>+402 more</p>
+        </div>
+        <div>
+          <h3>PRICE</h3>
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 279 to Rs. 5385</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 5385 to Rs. 10491</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 10491 to Rs. 15597</label> <br />
+
+          <input type="checkbox" value="low" name="price" />
+          <label for="low">Rs. 15597 to Rs. 20703</label> <br />
+        </div>
+        <div>
+          <h3>COLOR</h3>
+          <input type="checkbox" value="" name="colour" />
+          <label for=""> Blue</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">White</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Navy Blue</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Green</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Black</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Grey</label> <br />
+          <input type="checkbox" value="" name="colour" />
+          <label for="">Red</label> <br />
+          <p>+38 more</p>
+        </div>
+
+        <div>
+          <h3>DISCOUNT RANGE</h3>
+          <input type="radio" value="" name="discount" />
+          <label for="">10% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">20% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">30% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">40% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">50% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">60% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">70% and above</label> <br />
+          <input type="radio" value="" name="discount" />
+          <label for="">80% and above</label> <br />
+        </div>
+      </div>
+      <div id="product">
+        <div id="main-box"></div>
+        <div id="selectPage">
+          <p style="align-self: center; color:#535766">Page 1 to 1220</p>
+          <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+            <div>9</div>
+            <div>10</div>
+          </div>
+          
+          <button>Next > </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="text">
+      <div>
+        <h4>BUY CASUAL SHIRTS FOR MEN</h4>
+        <p>LOOK DAPPER AND STAY RELAXED WITH CASUAL SHIRTS FOR MEN</p>
+        <br />
+        <p>
+          Almost all men own a set of shirts – right from students to working
+          professionals. These garments are comfortable and versatile.
+          Modern-day casual shirts for men have evolved from inner garments of
+          medieval times. They were originally made of un-dyed, plain fabrics.
+          Coloured shirts made an appearance around the 19th century. And by the
+          20th century, shirts became mainstream and accepted as outerwear of
+          class. At Myntra we are proud to host some of the best casual shirts
+          for men online. You can choose from a wide range of options in
+          fabrics, patterns, collar-type, sleeves and more.
+        </p>
+        <p>MEN’S CASUAL SHIRTS AT MYNTRA: AN OPTION FOR EVERY OCCASION</p>
+        <p>
+          Look dapper and feel comfortable from within with our collection of
+          the best men’s casual shirt brands. You can access the latest
+          varieties and new casual shirts for men fresh from the fashion houses
+          right here at Myntra. Here is a look at a few types of casual shirts
+          for men and how to create the perfect outfit for every occasion:
+        </p>
+        <ol>
+          <li>
+            Checked casual shirts for men are great for an outdoor adventure.
+            Get yourself a buffalo-checked slim-fit shirt in the quintessential
+            red and black combination. Wear it unbuttoned over a white
+            round-neck T-shirt along with charcoal grey trousers. Wear a brown
+            jacket and a pair of rugged brown boots before you take a walk in
+            the woods.
+          </li>
+          <li>
+            If you are planning to head to a beach-side resort, replace your
+            T-shirts with casual shirts for men. Choose a cool blue shirt in
+            solid and pair it up with red chino shorts. Go sock-free with a pair
+            of beige lace-up shoes. Wear wayfarers and a gold cap for added
+            style.
+          </li>
+          <li>
+            It is time to head for a night of weekend clubbing with striped
+            casual shirts for men. Put on a black vertical-striped shirt with
+            the sleeves folded at the elbows. Team it up with light blue
+            distressed jeans. Brown leather shoes and a brown strap watch would
+            complete the look.
+          </li>
+          <li>
+            For a dinner date, express your love and commitment with a crisp
+            white shirt. Wear it with dark blue trousers with a striped pattern.
+            Brown leather slip-on shoes would add more class to your outfit.
+            Accessorise with a smart metallic watch and carry your cash or cards
+            in a smooth wallet.
+          </li>
+          <li>
+            Shine on like a diamond dressed in silk shirts. Pick up a silk shirt
+            in green, or off-white and wear it with our dhotis for your local
+            festivals. Alternatively, pick up a red or maroon shirt, and wear it
+            inserted with trousers for parties.
+          </li>
+          <p>
+            Check out other variations in casual shirts for men such as
+            colour-blocked, micro-checks gingham checks, polka dots, horizontal
+            stripes and more such patterns.
+          </p>
+          <h4>BUY CASUAL SHIRTS FOR MEN WITH EASE</h4>
+          <p>
+            If you would like to buy the best price casual shirt for men online
+            shopping at Myntra is the way to go. We bring you very simplified
+            browsing, selection and payment processes so that you can shop
+            online without any hassles.
+          </p>
+        </ol>
+        <br />
+        <h4>
+          VIDEO: How To Wear A Shirt In Different Ways | Fit Like A Model |
+          Myntra
+        </h4>
+        <iframe
+          width="500"
+          height="300"
+          src="https://www.youtube.com/embed/ITtTScTBak4"
+          title="How To Wear A Shirt In Different Ways | Fit Like A Model | Myntra"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <p>
+          In this episode of ‘Fit Like A Model’ our style mentor will guide you
+          on how to wear a shirt in different styles.
+        </p>
+      </div>
+      <div>
+        <h4>CASUAL SHIRTS FOR MEN PRICE LIST</h4>
+        <table>
+          <tr>
+            <th>Casual Shirts for Men</th>
+            <th>PRICE (RS)</th>
+          </tr>
+          <tr>
+            <td>Roadster Men Black & Grey Checked Pure Cotton Casual Shirt</td>
+            <td>Rs. 524</td>
+          </tr>
+          <tr>
+            <td>
+              The Indian Garage Co Men White & Teal Blue Slim Fit Striped Casual
+              Shirt
+            </td>
+            <td>Rs. 626</td>
+          </tr>
+          <tr>
+            <td>Dennis Lingo Men Pink Slim Fit Casual Shirt</td>
+            <td>Rs. 699</td>
+          </tr>
+          <tr>
+            <td>
+              Mast & Harbour Men Blue & White Regular Fit Checked Casual Shirt
+            </td>
+            <td>Rs. 911</td>
+          </tr>
+          <tr>
+            <td>Roadster Men Blue Printed Casual Sustainable Shirt</td>
+            <td>Rs. 659</td>
+          </tr>
+          <tr>
+            <td>Dennis Lingo Men Olive Green Slim Fit Casual Shirt</td>
+            <td>Rs. 699</td>
+          </tr>
+          <tr>
+            <td>
+              Calvin Klein Jeans Men Black Solid Slim Fit Satin Casual Shirt
+            </td>
+            <td>Rs. 3999</td>
+          </tr>
+          <tr>
+            <td>Campus Sutra Men White & Blue Striped Casual Shirt</td>
+            <td>Rs. 899</td>
+          </tr>
+          <tr>
+            <td>
+              HIGHLANDER Men White & Sea Green Slim Fit Striped Casual Shirt
+            </td>
+            <td>Rs. 574</td>
+          </tr>
+          <tr>
+            <td>WILD WEST Men Black Slim Fit Casual Shirt</td>
+            <td>Rs. 593</td>
+          </tr>
+        </table>
+        <p>Data last updated on 01/08/2022</p>
+      </div>
+    </div>
+    <div id="bottom">
+      <div>
+        <h5>ONLINE SHOPINT</h5>
+        <p>Mens</p>
+        <p>Womens</p>
+        <p>Kids</p>
+        <p>Home & Living</p>
+        <p>Beauty</p>
+        <p>Gift Card</p>
+        <p>Myntra Insider</p>
+        <br /><br />
+        <h5>USEFUL LINKS</h5>
+        <p>Blogs</p>
+        <p>Careers</p>
+        <p>Site Map</p>
+        <p>Corporate Information</p>
+        <p>Whitehat</p>
+      </div>
+      <div>
+        <h5>CUSTOMER POLICIES</h5>
+        <p>Contact Us</p>
+        <p>FAQ</p>
+        <p>T&C</p>
+        <p>Term Of Use</p>
+        <p>Track Order</p>
+        <p>Shiping</p>
+        <p>Cancellation</p>
+        <p>Return</p>
+        <p>Privacy policy</p>
+        <p>Grievance Officer</p>
+      </div>
+      <div>
+        <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
+        <div id="store">
+          <img
+            src="https://constant.myntassets.com/web/assets/img/80cc455a-92d2-4b5c-a038-7da0d92af33f1539674178924-google_play.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/bc5e11ad-0250-420a-ac71-115a57ca35d51539674178941-apple_store.png"
+            alt=""
+          />
+        </div>
+
+        <h5>KEEP ON TOUCH</h5>
+        <div id="socialmedialogo">
+          <img
+            src="https://constant.myntassets.com/web/assets/img/d2bec182-bef5-4fab-ade0-034d21ec82e31574604275433-fb.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/f10bc513-c5a4-490c-9a9c-eb7a3cc8252b1574604275383-twitter.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/a7e3c86e-566a-44a6-a733-179389dd87111574604275355-yt.png"
+            alt=""
+          />
+          <img
+            src="https://constant.myntassets.com/web/assets/img/b4fcca19-5fc1-4199-93ca-4cae3210ef7f1574604275408-insta.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div>
+        <div>
+          <img
+            src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
+            alt=""
+          />
+          <p><b>100% ORIGINAL</b> guaranteed for all products at myntra.com</p>
+        </div>
+        <div>
+          <img
+            src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
+            alt=""
+          />
+          <p><b>Return within 30 Days</b> of receiving your order</p>
+        </div>
+      </div>
+    </div>
+    <div id="popularSearch">
+      <p>
+        Apaar | Sharma | Adidas | Arrow | Fila | Online Shopping | Nike | Pepe
+        Jeans | Puma | United Colors Of Benetton | Fastrack | Shorts | Being
+        Human | Skirts | Woodland | Supra | Dresses | Winter Wear | Sweatshirts
+        For Men | Winter Jackets For Men | Chinos | Shoes | Men Blue & Grey
+        Checked Casual Shir | Shirts For Men | Arbaaz | Clothing | Jewellery | T
+        Shirts | Bags | Watches | Caps | Shirts | Backpacks | Flip Flops |
+        Shirts | Dresses | Party Dresses | Puma Tshirts | Woodland Shoes | Titan
+        Watches | Fastrack Watches | Wrangler Shirts | Adidas Tshirts | Nike
+        Shoes | Roadster Shirts | Casual Shoes | Running Shoes | Nike Sports
+        Shoes | Jeans | Being Human Tshirts
+      </p>
+    </div>
+    <div id="last">
+      <p>In case of any concern ,<span>Contact Us</span></p>
+      <p>© 2022 www.myntra.com. All rights reserved</p>
+    </div>
+  </body>
+</html>
+<script src="mens.js"></script>

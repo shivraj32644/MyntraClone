@@ -8,7 +8,7 @@ var totalamt=0;
 displayData(cartobj);
 
 function displayData(data){
-    data.map(function(elem){
+    data.map(function(elem,index){
 
         var img=document.createElement("img");
         img.setAttribute("src",elem.image_url);
@@ -28,23 +28,92 @@ function displayData(data){
 
         var prizediv= document.createElement("div");
         var price=document.createElement("p");
-        price.innerText=elem.price;
+        price.innerText="₹"+elem.price;
+        price.style.fontWeight="600";
         totalamt += parseInt(elem.price);
         var strikedoffprice=document.createElement("p");
-        strikedoffprice.innerText=elem.strikedoffprice;
+        strikedoffprice.innerText="₹"+elem.strikedoffprice;
+        strikedoffprice.style.textDecoration="line-through";
+        strikedoffprice.style.color="#94969f";
         totalmrp+=parseInt(elem.strikedoffprice);
 
         var disc=document.createElement("p");
         var off=Math.round(((elem.strikedoffprice-elem.price)/elem.strikedoffprice)*100);
         disc.innerText=off+"% OFF";
+        disc.style.color="#f16565";
         totaldisc+=parseInt(elem.strikedoffprice-elem.price);
         prizediv.append(price,strikedoffprice,disc);
 
         var delivery=document.createElement("div");
         delivery.innerText="Express Delivery in 2 Days";
 
-        document.querySelector("#leftchild").append(img);
-        document.querySelector("#rightchild").append(brand,name,sizediv,prizediv,delivery);
+        var leftchild =document.createElement("div");
+        leftchild.append(img);
+        leftchild.setAttribute("class","leftchild");
+        var rightchild= document.createElement("div");
+        rightchild.append(brand,name,sizediv,prizediv,delivery);
+        rightchild.setAttribute("class","rightchild");
+
+        var crossdiv=document.createElement("div");
+        var cross=document.createElement("img");
+        cross.setAttribute("src","https://cdn.onlinewebfonts.com/svg/img_265949.png");
+        crossdiv.setAttribute("class","crossdiv");
+        crossdiv.append(cross);
+        crossdiv.addEventListener("click",function(){
+            removeRow(index);
+        });
+
+
+        // var popupdiv=document.createElement("div");
+        // popupdiv.setAttribute("class","popupdiv");
+        // var selectdiv=document.createElement("div");
+        // selectdiv.innerText="Select Quantity"
+        // var crosspop=document.createElement("img");
+        // crosspop.setAttribute("src","https://cdn.onlinewebfonts.com/svg/img_265949.png");
+        // selectdiv.append(crosspop);
+        
+        // var numberdiv=document.createElement("div");
+        // var n1=document.createElement("div");
+        // n1.innerText= "1";
+        // n1.setAttribute("id","n1");
+        // var n2=document.createElement("div");
+        // n2.innerText= "2";
+        // n2.setAttribute("id","n2")
+        // var n3=document.createElement("div");
+        // n3.innerText= "3";
+        // n3.setAttribute("id","n3")
+        // var n4=document.createElement("div");
+        // n4.innerText= "4";
+        // n4.setAttribute("id","n4")
+        // var n5=document.createElement("div");
+        // n5.innerText= "5";
+        // n5.setAttribute("id","n5")
+        // var n6=document.createElement("div");
+        // n6.innerText= "6";
+        // n6.setAttribute("id","n6")
+        // var n7=document.createElement("div");
+        // n7.innerText= "7";
+        // n7.setAttribute("id","n7")
+        // var n8=document.createElement("div");
+        // n8.innerText= "8";
+        // n8.setAttribute("id","n8")
+        // var n9=document.createElement("div");
+        // n9.innerText= "9";
+        // n9.setAttribute("id","n9")
+        // var n10=document.createElement("div");
+        // n10.innerText= "10";
+        // n10.setAttribute("id","n10")
+        // numberdiv.append(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10);
+
+        // var done=document.createElement("button");
+        // done.innerText="Done";
+        
+        // popupdiv.append(selectdiv,numberdiv,done);
+        var cartitemdiv=document.createElement("div");
+        cartitemdiv.setAttribute("class","cartItemsList")
+        cartitemdiv.append(leftchild,rightchild,crossdiv)
+
+        document.querySelector("#cartItemsparent").append(cartitemdiv);
 
     })
 }
@@ -98,4 +167,7 @@ function displayRightside(){
     document.getElementById("priceBreakup").append(mrpdiv,discdiv,coupondiv,convdiv,totaldiv,btn);
 
 
+}
+function removeRow(i){
+    event.target.parentNode.remove();
 }
