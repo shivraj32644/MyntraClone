@@ -54,7 +54,8 @@ input {
 img {
   height: 60px;
   width: 60px;
-  margin-top: 15px;
+  margin-top: 11px;
+  margin-left: 55px;
 }
 .menu-bar ul li a {
   text-decoration: none;
@@ -96,14 +97,28 @@ ul > li:nth-child(5) {
   width: max-content;
   display: flex;
   flex-direction: column;
+  /* box-sizing: border-box; */
+  /* border: 1px solid teal; */
+  /* float: left; */
+
 }
 .pro > img {
   height: 20px;
   width: 20px;
-  /* border: 2px solid crimson; */
+  /* */
+  
 }
 #Profile-Div {
   display: flex;
   height: 80px;
   align-items: center;
+  /* box-sizing: border-box;
+  justify-content: center; */
+}
+.pro>span{
+  /* border: 2px solid crimson; */
+  margin-left: 45px;
+}
+#bag{
+  margin-left: 52px;
 }
