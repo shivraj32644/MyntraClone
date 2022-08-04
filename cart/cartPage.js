@@ -60,7 +60,7 @@ function displayData(data){
         crossdiv.setAttribute("class","crossdiv");
         crossdiv.append(cross);
         crossdiv.addEventListener("click",function(){
-            removeRow(index);
+            removeRow(elem);
         });
 
 
@@ -110,10 +110,10 @@ function displayData(data){
         
         // popupdiv.append(selectdiv,numberdiv,done);
         var cartitemdiv=document.createElement("div");
-        cartitemdiv.setAttribute("class","cartItemsList")
-        cartitemdiv.append(leftchild,rightchild,crossdiv)
+        cartitemdiv.setAttribute("class","cartItemsList");
+        cartitemdiv.append(leftchild,rightchild,crossdiv);
 
-        document.querySelector("#cartItemsparent").append(cartitemdiv);
+        document.querySelector("#cartitemparent").append(cartitemdiv);
 
     })
 }
@@ -168,6 +168,6 @@ function displayRightside(){
 
 
 }
-function removeRow(i){
+function removeRow(){
     event.target.parentNode.remove();
 }

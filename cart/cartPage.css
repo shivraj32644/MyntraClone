@@ -87,9 +87,9 @@ svg+p{
     font-size: 16px;
     color: #282c3f;
 }
-.cartItemsList{
+/* .cartitemparent{
     display: block;
-}
+} */
 #rightBlock{
     vertical-align: top;
     padding: 24px 0 0 16px;
