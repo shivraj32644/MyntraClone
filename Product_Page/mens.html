@@ -7,16 +7,19 @@
     <title>Mens Section</title>
 
     <link rel="stylesheet" href="./common.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./mens.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+
+
   </head>
   <body>
     <div id="navbar">
-      <p>nav bar</p>
+      <p>Navigation Bar</p>
     </div>
     <div id="path">Home / Clothing / <b>Mens</b></div>
     <div id="itemName">
@@ -67,63 +70,89 @@
       <div id="filter">
         <div>
           <h3>Brand</h3>
-          <input type="checkbox" value="Allen Soley" name="brand" />
-          <label for="Allen Soley">Allen Soley</label> <br />
-
-          <input type="checkbox" value="Roadster" name="brand" />
-          <label for="Roadster">Roadster</label> <br />
-
-          <input type="checkbox" value="Louis Philippe Sport" name="brand" />
-          <label for="Louis Philippe Sport">Louis Philippe Sport</label><br />
-
-          <input type="checkbox" value="HIGHLANDER" name="brand" />
-          <label for="HIGHLANDER">HIGHLANDER</label> <br />
-
-          <input type="checkbox" value="SPYKAR" name="brand" />
-          <label for="SPYKAR">SPYKAR</label> <br />
-
-          <input type="checkbox" value="Blackberry" name="brand" />
-          <label for="Blackberry">Blackberry</label> <br />
-
-          <input type="checkbox" value="Flying Machine" name="brand" />
-          <label for="Flying Machine">Flying Machine</label> <br />
-
-          <input type="checkbox" value="U S Polo Assn." name="brand" />
-          <label for="U S Polo Assn.">U S Polo Assn.</label> <br />
+          <label class="checkbox-container">Allen Soley
+          <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Roadster
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Louis Philippe Sport
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">HIGHLANDER
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Blackberry
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Flying Machine
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> U S Polo Assn.
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          
 
           <p>+402 more</p>
         </div>
         <div>
           <h3>PRICE</h3>
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 279 to Rs. 5385</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 5385 to Rs. 10491</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 10491 to Rs. 15597</label> <br />
-
-          <input type="checkbox" value="low" name="price" />
-          <label for="low">Rs. 15597 to Rs. 20703</label> <br />
+          <label class="checkbox-container">Rs. 279 to Rs. 5385
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 5385 to Rs. 10491
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 10491 to Rs. 15597
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Rs. 15597 to Rs. 20703
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label><br>
         </div>
         <div>
           <h3>COLOR</h3>
-          <input type="checkbox" value="" name="colour" />
-          <label for=""> Blue</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">White</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Navy Blue</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Green</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Black</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Grey</label> <br />
-          <input type="checkbox" value="" name="colour" />
-          <label for="">Red</label> <br />
+          <label class="checkbox-container">Blue
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">White
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Navy Blue
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container">Green
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Black
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Grey
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
+          <label class="checkbox-container"> Red
+              <input type="checkbox">
+              <span class="checkmark"></span>
+          </label>
           <p>+38 more</p>
+          <br>
         </div>
 
         <div>
@@ -143,36 +172,19 @@
           <input type="radio" value="" name="discount" />
           <label for="">70% and above</label> <br />
           <input type="radio" value="" name="discount" />
-          <label for="">80% and above</label> <br />
+          <label for="">80% and above</label> <br /><br>
         </div>
       </div>
       <div id="product">
-        <div id="main-box"></div>
-        <div id="selectPage">
-          <p style="align-self: center; color:#535766">Page 1 to 1220</p>
-          <div>
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-            <div>7</div>
-            <div>8</div>
-            <div>9</div>
-            <div>10</div>
-          </div>
-          
-          <button>Next > </button>
-        </div>
+        
       </div>
     </div>
 
     <div id="text">
       <div>
         <h4>BUY CASUAL SHIRTS FOR MEN</h4>
-        <p>LOOK DAPPER AND STAY RELAXED WITH CASUAL SHIRTS FOR MEN</p>
-        <br />
+        <p style="font-size:12px; color:rgba(0, 0, 0, 0.616);font-weight: 700; ">LOOK DAPPER AND STAY RELAXED WITH CASUAL SHIRTS FOR MEN</p>
+        
         <p>
           Almost all men own a set of shirts – right from students to working
           professionals. These garments are comfortable and versatile.
@@ -184,7 +196,7 @@
           for men online. You can choose from a wide range of options in
           fabrics, patterns, collar-type, sleeves and more.
         </p>
-        <p>MEN’S CASUAL SHIRTS AT MYNTRA: AN OPTION FOR EVERY OCCASION</p>
+        <p style="font-size:12px; color:rgba(0, 0, 0, 0.616);font-weight: 700; ">MEN’S CASUAL SHIRTS AT MYNTRA: AN OPTION FOR EVERY OCCASION</p>
         <p>
           Look dapper and feel comfortable from within with our collection of
           the best men’s casual shirt brands. You can access the latest
@@ -390,14 +402,14 @@
             src="https://constant.myntassets.com/web/assets/img/6c3306ca-1efa-4a27-8769-3b69d16948741574602902452-original.png"
             alt=""
           />
-          <p><b>100% ORIGINAL</b> guaranteed for all products at myntra.com</p>
+          <p><b>100% ORIGINAL</b> <span>guaranteed for all products at myntra.com</span></p>
         </div>
         <div>
           <img
             src="https://constant.myntassets.com/web/assets/img/ef05d6ec-950a-4d01-bbfa-e8e5af80ffe31574602902427-30days.png"
             alt=""
           />
-          <p><b>Return within 30 Days</b> of receiving your order</p>
+          <p><b>Return within 30 Days</b> <span>of receiving your order</span></p>
         </div>
       </div>
     </div>
