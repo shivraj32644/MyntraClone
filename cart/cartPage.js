@@ -8,6 +8,7 @@ var totalamt=0;
 displayData(cartobj);
 
 function displayData(data){
+    document.querySelector("#cartitemparent").innerHTML = "";
     data.map(function(elem,index){
 
         var img=document.createElement("img");
@@ -21,8 +22,12 @@ function displayData(data){
 
         var sizediv=document.createElement("div");
         var size=document.createElement("button");
-        size.innerText="Size"
+        size.innerText="Size";
+
         var qty=document.createElement("button");
+        qty.addEventListener("click",function(){
+            openPopup(elem,index);
+        });
         qty.innerText="Qty:1"
         sizediv.append(size,qty);
 
@@ -30,11 +35,15 @@ function displayData(data){
         var price=document.createElement("p");
         price.innerText="₹"+elem.price;
         price.style.fontWeight="600";
+        price.setAttribute("id","price")
         totalamt += parseInt(elem.price);
+        
         var strikedoffprice=document.createElement("p");
         strikedoffprice.innerText="₹"+elem.strikedoffprice;
         strikedoffprice.style.textDecoration="line-through";
         strikedoffprice.style.color="#94969f";
+        strikedoffprice.setAttribute("id","strikedoffprice");
+
         totalmrp+=parseInt(elem.strikedoffprice);
 
         var disc=document.createElement("p");
@@ -60,7 +69,7 @@ function displayData(data){
         crossdiv.setAttribute("class","crossdiv");
         crossdiv.append(cross);
         crossdiv.addEventListener("click",function(){
-            removeRow(elem);
+           removeRow(index)
         });
 
 
@@ -120,11 +129,13 @@ function displayData(data){
 displayRightside()
 
 function displayRightside(){
+    document.getElementById("priceBreakup").innerHTML="";
     var mrpdiv=document.createElement("div");
     var mrp1=document.createElement("div");
     var mrp2=document.createElement("div");
     mrp1.innerText="Total MRP";
     mrp2.innerText="₹"+totalmrp;
+    mrp2.setAttribute("id","totalmrp");
     mrpdiv.append(mrp1,mrp2);
 
     var discdiv=document.createElement("div");
@@ -132,6 +143,7 @@ function displayRightside(){
     var disc2=document.createElement("div");
     disc1.innerText="Discount on MRP";
     disc2.innerText="₹"+totaldisc;
+    disc2.setAttribute("id","totaldisc");
     discdiv.append(disc1,disc2);
 
     var coupondiv=document.createElement("div");
@@ -159,6 +171,7 @@ function displayRightside(){
     total1.innerText="Total Amount";
     var total2=document.createElement("div");
     total2.innerText="₹"+totalamt;
+    total2.setAttribute("id","totalamt");
     totaldiv.append(total1,total2);
 
     var btn=document.createElement("button");
@@ -168,6 +181,71 @@ function displayRightside(){
 
 
 }
-function removeRow(){
-    event.target.parentNode.remove();
+function removeRow(index){
+    cartobj.splice(index, 1);
+    localStorage.setItem("McartData", JSON.stringify(cartobj));
+    displayData(cartobj);
+}
+
+let modal=document.getElementById("modal");
+let popup=document.getElementById("popupdiv");
+var i;
+var element={}
+function openPopup(elem,index){
+    element=elem;
+    i=index;
+popup.classList.add("openpopup");
+modal.classList.add("openpopup");
+}
+function closePopup(){
+    popup.classList.remove("openpopup");
+    modal.classList.remove("openpopup");
+}
+document.getElementById("num1").addEventListener("click",function(){
+    var num=parseInt(event.target.innerText);
+    multiplyQty(element,num,cartobj,i);
+})
+document.getElementById("num2").addEventListener("click",function(){
+    var num=parseInt(event.target.innerText);
+    multiplyQty(element,num,cartobj,i);
+})
+document.getElementById("num3").addEventListener("click",function(){
+    var num=parseInt(event.target.innerText);
+    multiplyQty(element,num,cartobj,i);
+})
+document.getElementById("num4").addEventListener("click",function(){
+    var num=parseInt(event.target.innerText);
+    multiplyQty(element,num,cartobj,i);
+})
+document.getElementById("num5").addEventListener("click",function(){
+    var num=parseInt(event.target.innerText);
+    multiplyQty(element,num,cartobj,i);
+})
+// function multiplyQty(element,num,cartobj,i){
+// console.log(num);
+// updateAmount(element,num,cartobj,i);
+// }
+function  multiplyQty(element,num,cartobj,i){
+    var price=parseInt(cartobj[i].price);
+    cartobj[i].price=price*num;
+    
+    // document.getElementById("price").innerText=price*num;
+
+    var strikedoffprice=parseInt(cartobj[i].strikedoffprice);
+    cartobj[i].strikedoffprice=strikedoffprice*num;
+    // document.getElementById("strikedoffprice").innerText=strikedoffprice*num;
+
+    var amt= totalamt + ((price*num)-price);
+    document.getElementById("totalamt").innerText ="₹"+amt;
+
+    var mrp= totalmrp + ((strikedoffprice*num)-strikedoffprice);
+    document.getElementById("totalmrp").innerText ="₹"+mrp;
+
+    var discount=mrp-amt;
+    document.getElementById("totaldisc").innerText="₹"+discount;
+
+    localStorage.setItem("McartData",JSON.stringify(cartobj));
+    displayData(cartobj);
+element={};
+index=0;
 }
