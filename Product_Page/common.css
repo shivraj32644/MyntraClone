@@ -184,6 +184,7 @@ body{
   border-top: 1px solid #e9e9ed;
   border-right: 1px solid #e9e9ed;
   
+  
 }
 #product {
   border: 1px solid #e9e9ed;
@@ -361,5 +362,14 @@ body{
 @media screen and (max-width: 746px) {
   #product {
     grid-template-columns: repeat(1, 1fr);
+  }
+  
+}
+@media screen and (max-width: 450px) {
+  #product {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  #filter{
+    display: none;
   }
 }
