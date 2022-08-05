@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Myntra</title>
+    <style>
+      #parent {
+        /* border: 2px solid red; */
+
+        width: 30%;
+        margin-left: 40%;
+        height: 500px;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        background-color: #fff;
+      }
+      img {
+        width: 100%;
+      }
+      #child1 {
+        display: flex;
+      }
+      #child2 {
+        display: flex;
+        /* margin-bottom: 30px; */
+      }
+      #child {
+        margin-left: 35px;
+      }
+      #inp {
+        width: 330px;
+        height: 40px;
+      }
+      button {
+        width: 330px;
+        height: 40px;
+        font-size: 15px;
+        background-color: #ff3f6c;
+        color: white;
+        border: none;
+      }
+      #get {
+        color: #ff3c6f;
+      }
+      body {
+        background-color: #fdeeec;
+      }
+      .or {
+        margin: auto, 2px;
+        font-weight: 300;
+        font-size: 20ipx;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <form id="form">
+        <img
+          src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/2022/7/20/13eee323-e3c9-4a1d-bd8c-0d9d34d23fd71658340733654-Frame-108.jpg"
+          alt="logo"
+        />
+        <br />
+        <br />
+        <div id="child">
+          <h2>Login <span class="or"> or </span> Signup</h2>
+
+          <input id="inp" type="number" placeholder=" +91 | Mobile Number*" />
+
+          <br />
+          <div id="child2">
+            <!-- <p>By continue, I agree to the</p>
+          <p>Terms of Use</p>
+          <p>&</p>
+          <p>Privacy Policy</p> -->
+
+            <p>
+              By continuing, I agree to the<span style="color: #ff3c6f"
+                >Terms of Use </span
+              >&<span style="color: #ff3c6f"> Privacy Policy</span>
+            </p>
+          </div>
+
+          <button>CONTINUE</button>
+          <br />
+          <br />
+          <p>Have trouble logging in? <span id="get">Get Help</span></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
