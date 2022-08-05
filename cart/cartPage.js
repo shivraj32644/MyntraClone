@@ -28,7 +28,7 @@ function displayData(data){
         qty.addEventListener("click",function(){
             openPopup(elem,index);
         });
-        qty.innerText="Qty:1"
+        qty.innerText="Qty:"+elem.quantity;
         sizediv.append(size,qty);
 
         var prizediv= document.createElement("div");
@@ -72,52 +72,6 @@ function displayData(data){
            removeRow(index)
         });
 
-
-        // var popupdiv=document.createElement("div");
-        // popupdiv.setAttribute("class","popupdiv");
-        // var selectdiv=document.createElement("div");
-        // selectdiv.innerText="Select Quantity"
-        // var crosspop=document.createElement("img");
-        // crosspop.setAttribute("src","https://cdn.onlinewebfonts.com/svg/img_265949.png");
-        // selectdiv.append(crosspop);
-        
-        // var numberdiv=document.createElement("div");
-        // var n1=document.createElement("div");
-        // n1.innerText= "1";
-        // n1.setAttribute("id","n1");
-        // var n2=document.createElement("div");
-        // n2.innerText= "2";
-        // n2.setAttribute("id","n2")
-        // var n3=document.createElement("div");
-        // n3.innerText= "3";
-        // n3.setAttribute("id","n3")
-        // var n4=document.createElement("div");
-        // n4.innerText= "4";
-        // n4.setAttribute("id","n4")
-        // var n5=document.createElement("div");
-        // n5.innerText= "5";
-        // n5.setAttribute("id","n5")
-        // var n6=document.createElement("div");
-        // n6.innerText= "6";
-        // n6.setAttribute("id","n6")
-        // var n7=document.createElement("div");
-        // n7.innerText= "7";
-        // n7.setAttribute("id","n7")
-        // var n8=document.createElement("div");
-        // n8.innerText= "8";
-        // n8.setAttribute("id","n8")
-        // var n9=document.createElement("div");
-        // n9.innerText= "9";
-        // n9.setAttribute("id","n9")
-        // var n10=document.createElement("div");
-        // n10.innerText= "10";
-        // n10.setAttribute("id","n10")
-        // numberdiv.append(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10);
-
-        // var done=document.createElement("button");
-        // done.innerText="Done";
-        
-        // popupdiv.append(selectdiv,numberdiv,done);
         var cartitemdiv=document.createElement("div");
         cartitemdiv.setAttribute("class","cartItemsList");
         cartitemdiv.append(leftchild,rightchild,crossdiv);
@@ -201,6 +155,14 @@ function closePopup(){
     popup.classList.remove("openpopup");
     modal.classList.remove("openpopup");
 }
+function opencoupon(){
+document.getElementById("couponpopup").classList.add("openpopup");
+modal.classList.add("openpopup");
+}
+function closecoupon(){
+    document.getElementById("couponpopup").classList.remove("openpopup");
+    modal.classList.remove("openpopup");
+}
 document.getElementById("num1").addEventListener("click",function(){
     var num=parseInt(event.target.innerText);
     multiplyQty(element,num,cartobj,i);
@@ -248,4 +210,11 @@ function  multiplyQty(element,num,cartobj,i){
     displayData(cartobj);
 element={};
 index=0;
+}
+function applyCoupon(){
+    if(totalamt>1499){
+        totalamt-=301;
+        displayRightside();
+    }
+    
 }
