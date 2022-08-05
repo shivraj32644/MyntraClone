@@ -693,12 +693,12 @@ function displayData(data) {
   });
 }
 
-var WcartArr = JSON.parse(localStorage.getItem("WcartData")) || [];
+var McartArr = JSON.parse(localStorage.getItem("McartData")) || [];
 function addToCart(i) {
   var product = WomensData.filter(function (elem, index) {
     return index == i;
   });
-  WcartArr.push(product[0]);
-  localStorage.setItem("WcartData", JSON.stringify(WcartArr));
-  console.log(JSON.parse(localStorage.getItem("WcartData")));
+  McartArr.push(product[0]);
+  localStorage.setItem("McartData", JSON.stringify(McartArr));
+  console.log(JSON.parse(localStorage.getItem("McartData")));
 }

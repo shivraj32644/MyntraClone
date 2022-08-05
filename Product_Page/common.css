@@ -13,6 +13,7 @@ body{
   margin-right: -10px;
   margin-top: -10px;
   margin-bottom: 20px;
+  
 }
 #path {
   height: 18px;
@@ -212,7 +213,7 @@ body{
   color: #878787;
 }
 #sub-box{
-  
+    /* border: 1px solid #000; */
     width: 210px;
     text-align: left;
     position: relative;
@@ -223,6 +224,7 @@ body{
     box-sizing: border-box;
     margin: 30px 5px 5px 30px;
     /* padding-right: 10px; */
+    height: 380px;
    
 }
 #sub-box:hover #price-box{
@@ -232,9 +234,11 @@ body{
 
 
 #sub-box:hover {
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  /* box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px; */
+  /* -ms-transform-origin-y: -1; */
     height: 380px;
+    /* margin-top: ; */
 
    
 }
@@ -246,7 +250,8 @@ body{
 
 }
 #sub-box:hover > img {
-  height: 72%;
+  height: 73.8%;
+  object-fit:contain;
   /* transition-duration: 8s;
   transition-delay: 10s; */
 }
@@ -330,7 +335,7 @@ body{
 #sub-box:hover > #size {
   display: block;
   color: #535665;
-  /* margin-top: -8px; */
+  margin-top: -6px;
   font-size: 14px;
 }
 #sub-box:hover > #size {
