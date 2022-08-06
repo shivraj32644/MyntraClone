@@ -73,7 +73,6 @@ var mensData = [
     price: "452",
     strikedoffprice: "850",
     rating: 2,
-
     quantity: 1,
     popular: 7,
     new: 12,
@@ -87,7 +86,6 @@ var mensData = [
     price: "745",
     strikedoffprice: "1200",
     rating: 7,
-
     quantity: 1,
     popular: 6,
     new: 15,
@@ -101,7 +99,6 @@ var mensData = [
     price: "2200",
     strikedoffprice: "3500",
     rating: 3,
-
     quantity: 1,
     popular: 6,
     new: 16,
@@ -115,7 +112,6 @@ var mensData = [
     price: "5440",
     strikedoffprice: "6510",
     rating: 5,
-
     quantity: 1,
     popular: 1,
     new: 45,
@@ -129,7 +125,6 @@ var mensData = [
     price: "6450",
     strikedoffprice: "8000",
     rating: 7,
-
     quantity: 1,
     popular: 6,
     new: 32,
@@ -143,7 +138,6 @@ var mensData = [
     price: "10900",
     strikedoffprice: "12000",
     rating: 3,
-
     quantity: 1,
     popular: 3,
     new: 31,
@@ -157,7 +151,6 @@ var mensData = [
     price: "11100",
     strikedoffprice: "12300",
     rating: 6,
-
     quantity: 1,
     popular: 7,
     new: 23,
@@ -171,7 +164,6 @@ var mensData = [
     price: "16800",
     strikedoffprice: "33000",
     rating: 6,
-
     quantity: 1,
     popular: 7,
     new: 13,
@@ -211,7 +203,6 @@ var mensData = [
     price: "1220",
     strikedoffprice: "3600",
     rating: 5,
-
     quantity: 1,
     popular: 8,
     new: 34,
@@ -225,7 +216,6 @@ var mensData = [
     price: "1800",
     strikedoffprice: "7200",
     rating: 8,
-
     quantity: 1,
     popular: 8,
     new: 36,
@@ -239,7 +229,6 @@ var mensData = [
     price: "6300",
     strikedoffprice: "30000",
     rating: 8,
-
     quantity: 1,
     popular: 6,
     new: 37,
@@ -253,7 +242,6 @@ var mensData = [
     price: "549",
     strikedoffprice: "2599",
     rating: 4,
-
     quantity: 1,
     popular: 1,
     new: 39,
@@ -267,7 +255,6 @@ var mensData = [
     price: "640",
     strikedoffprice: "2599",
     rating: 1,
-
     quantity: 1,
     popular: 0,
     new: 20,
@@ -281,7 +268,6 @@ var mensData = [
     price: "963",
     strikedoffprice: "2599",
     rating: 2,
-
     quantity: 1,
     popular: 3,
     new: 21,
@@ -295,7 +281,6 @@ var mensData = [
     price: "450",
     strikedoffprice: "2699",
     rating: 7,
-
     quantity: 1,
     popular: 8,
     new: 24,
@@ -309,7 +294,6 @@ var mensData = [
     price: "770",
     strikedoffprice: "3299",
     rating: 0,
-
     quantity: 1,
     popular: 8,
     new: 26,
@@ -323,7 +307,6 @@ var mensData = [
     price: "870",
     strikedoffprice: "4799",
     rating: 2,
-
     quantity: 1,
     popular: 5,
     new: 25,
@@ -337,7 +320,6 @@ var mensData = [
     price: "970",
     strikedoffprice: "9699",
     rating: 4,
-
     quantity: 1,
     popular: 8,
     new: 27,
@@ -351,7 +333,6 @@ var mensData = [
     price: "4100",
     strikedoffprice: "4200",
     rating: 7,
-
     quantity: 1,
     popular: 3,
     new: 28,
@@ -365,7 +346,6 @@ var mensData = [
     price: "5200",
     strikedoffprice: "5300",
     rating: 3,
-
     quantity: 1,
     popular: 4,
     new: 29,
@@ -379,7 +359,6 @@ var mensData = [
     price: "8880",
     strikedoffprice: "9999",
     rating: 8,
-
     quantity: 1,
     popular: 6,
     new: 30,
@@ -393,7 +372,6 @@ var mensData = [
     price: "8562",
     strikedoffprice: "12000",
     rating: 0,
-
     quantity: 1,
     popular: 0,
     new: 10,
@@ -463,7 +441,6 @@ var mensData = [
     price: "9170",
     strikedoffprice: "32599",
     rating: 2,
-
     quantity: 1,
     popular: 2,
     new: 15,
@@ -477,7 +454,6 @@ var mensData = [
     price: "9170",
     strikedoffprice: "22599",
     rating: 6,
-
     quantity: 1,
     popular: 8,
     new: 16,
@@ -491,7 +467,6 @@ var mensData = [
     price: "11780",
     strikedoffprice: "23599",
     rating: 4,
-
     quantity: 1,
     popular: 7,
     new: 17,
@@ -505,7 +480,6 @@ var mensData = [
     price: "1602",
     strikedoffprice: "42599",
     rating: 0,
-
     quantity: 1,
     popular: 8,
     new: 18,
@@ -519,7 +493,6 @@ var mensData = [
     price: "1180",
     strikedoffprice: "2599",
     rating: 2,
-
     quantity: 1,
     popular: 4,
     new: 19,
@@ -710,9 +683,7 @@ function sort() {
     });
   }
   if (value === "new") {
-    mensD;
-
-    ata.sort(function (a, b) {
+    mensData.sort(function (a, b) {
       return a.new - b.new;
     });
   }
@@ -807,7 +778,7 @@ function addToCart(i) {
   } else {
     McartArr[ind].quantity += 1;
   }
-  localStorage.setItem("McartArr", JSON.stringify(McartArr));
+  localStorage.setItem("McartData", JSON.stringify(McartArr));
   console.log(product);
-  console.log(McartArr);
+  console.log(McartData);
 }

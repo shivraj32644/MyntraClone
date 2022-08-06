@@ -23,7 +23,10 @@ body{
   display: flex;
   font-size: 14px;
 }
-
+#filter-tag{
+  width: 49%;
+  flex-wrap: wrap;
+}
 #filterBar {
   display: flex;
   justify-content: space-between;
@@ -43,7 +46,7 @@ body{
   justify-content: center;
 }
 #filterBar div:nth-child(3)  {
-  margin-right: 10px;
+  margin-right: 2%;
   
   align-self: center;
   border: 1px solid rgba(0, 0, 0, 0.307);
@@ -75,6 +78,7 @@ body{
 #filterBar div:nth-child(3) select  {
   /* border: 2px solid teal; */
   height: 30px;
+  /* float: right; */
   
 }
 #filterBar div:nth-child(3) select:hover  {
@@ -155,12 +159,17 @@ body{
   margin-left: 20px;
   font-size: 15px;
   
+  
 }
 
 
 #parent {
   display: flex;
+  /* width: 100%; */
+  /* margin: auto; */
+  /* border: 1px solid #000; */
   /* justify-content: flex-start; */
+
 }
 
 #filter {
@@ -191,11 +200,11 @@ body{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 10px 10px;
-  
+  /* width: 70%; */
 
 }
 #filter {
-  position: -webkit-sticky;
+  /* position: -webkit-sticky; */
   position: sticky;
   top: 0;
 }
@@ -217,12 +226,12 @@ body{
     /* border: 1px solid #000; */
     width: 210px;
     text-align: left;
-    position: relative;
-    vertical-align: top;
+    /* position: relative; */
+    /* vertical-align: top; */
     overflow: hidden;
-    display: inline-block;
+    /* display: inline-block; */
     
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 30px 5px 5px 30px;
     /* padding-right: 10px; */
     height: 380px;
@@ -344,19 +353,33 @@ body{
 }
 
 
-@media screen and (max-width: 1435px) {
+
+
+@media screen and (max-width :1520px) {
+  #filterBar div:nth-child(3){
+    margin-right: 10%;
+  }
+}
+
+@media screen and (max-width: 1436px) {
   #product {
     grid-template-columns: repeat(4, 1fr);
   }
+ 
 }
 @media screen and (max-width: 1206px) {
+  
   #product {
     grid-template-columns: repeat(3, 1fr);
   }
+ 
 }
 @media screen and (max-width: 976px) {
   #product {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #filterBar div:nth-child(2){
+    display: none;
   }
 }
 @media screen and (max-width: 746px) {
@@ -371,5 +394,11 @@ body{
   }
   #filter{
     display: none;
+  }
+  #filterBar div:nth-child(2){
+    display: none;
+  }
+  #filterBar div:nth-child(3){
+    margin-right: 0%;
   }
 }
