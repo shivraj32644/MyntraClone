@@ -807,7 +807,7 @@ function addToCart(i) {
   } else {
     McartArr[ind].quantity += 1;
   }
-  localStorage.setItem("McartArr", JSON.stringify(McartArr));
+  localStorage.setItem("McartData", JSON.stringify(McartArr));
   console.log(product);
   console.log(McartArr);
 }

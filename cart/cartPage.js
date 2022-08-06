@@ -1,13 +1,15 @@
 var cartobj= JSON.parse(localStorage.getItem("McartData"))||[];
 console.log(cartobj);
 
+var totalamt=0;
 var totalmrp=0;
 var totaldisc=0;
-var totalamt=0;
 
 displayData(cartobj);
 
 function displayData(data){
+    
+    
     document.querySelector("#cartitemparent").innerHTML = "";
     data.map(function(elem,index){
 
@@ -29,6 +31,7 @@ function displayData(data){
             openPopup(elem,index);
         });
         qty.innerText="Qty:"+elem.quantity;
+        qty.setAttribute("id","qty");
         sizediv.append(size,qty);
 
         var prizediv= document.createElement("div");
@@ -36,7 +39,7 @@ function displayData(data){
         price.innerText="₹"+elem.price;
         price.style.fontWeight="600";
         price.setAttribute("id","price")
-        totalamt += parseInt(elem.price);
+        totalamt += (parseInt(elem.price))*(parseInt(elem.quantity));
         
         var strikedoffprice=document.createElement("p");
         strikedoffprice.innerText="₹"+elem.strikedoffprice;
@@ -44,7 +47,7 @@ function displayData(data){
         strikedoffprice.style.color="#94969f";
         strikedoffprice.setAttribute("id","strikedoffprice");
 
-        totalmrp+=parseInt(elem.strikedoffprice);
+        totalmrp+=(parseInt(elem.strikedoffprice))*(parseInt(elem.quantity));
 
         var disc=document.createElement("p");
         var off=Math.round(((elem.strikedoffprice-elem.price)/elem.strikedoffprice)*100);
@@ -77,6 +80,7 @@ function displayData(data){
         cartitemdiv.append(leftchild,rightchild,crossdiv);
 
         document.querySelector("#cartitemparent").append(cartitemdiv);
+        document.getElementById("itemselected").innerText= cartobj.length+" ITEMS SELECTED";
 
     })
 }
@@ -136,9 +140,18 @@ function displayRightside(){
 
 }
 function removeRow(index){
+
+    totalamt-=(cartobj[index].price)*(cartobj[index].quantity);
+    totalmrp-=(cartobj[index].strikedoffprice)*(cartobj[index].quantity);
+    totaldisc-=totalmrp-totalamt;
+    cartobj[index].quantity = 0;
+    
+    console.log(cartobj[index].quantity);
     cartobj.splice(index, 1);
+    
     localStorage.setItem("McartData", JSON.stringify(cartobj));
     displayData(cartobj);
+    displayRightside();
 }
 
 let modal=document.getElementById("modal");
@@ -188,26 +201,35 @@ document.getElementById("num5").addEventListener("click",function(){
 // updateAmount(element,num,cartobj,i);
 // }
 function  multiplyQty(element,num,cartobj,i){
+   var num1=parseInt(cartobj[i].quantity);
+    cartobj[i].quantity=num;
     var price=parseInt(cartobj[i].price);
-    cartobj[i].price=price*num;
+    console.log(num+"num");
+    console.log(price+" price");
+    // cartobj[i].price=price*num;
     
-    // document.getElementById("price").innerText=price*num;
+    document.getElementById("price").innerText=price*num;
 
     var strikedoffprice=parseInt(cartobj[i].strikedoffprice);
-    cartobj[i].strikedoffprice=strikedoffprice*num;
-    // document.getElementById("strikedoffprice").innerText=strikedoffprice*num;
+    console.log(strikedoffprice+"strkd");
+    // cartobj[i].strikedoffprice=strikedoffprice*num;
+    document.getElementById("strikedoffprice").innerText=strikedoffprice*num;
+        console.log(num-num1);
+     totalamt += ((price)*(num-num1));
+    console.log(totalamt+"totalamt");
+    document.getElementById("totalamt").innerText ="₹"+totalamt;
 
-    var amt= totalamt + ((price*num)-price);
-    document.getElementById("totalamt").innerText ="₹"+amt;
+      totalmrp += ((strikedoffprice)*(num-num1));
+      console.log(totalmrp+"ttlmrp");
+    document.getElementById("totalmrp").innerText ="₹"+totalmrp;
 
-    var mrp= totalmrp + ((strikedoffprice*num)-strikedoffprice);
-    document.getElementById("totalmrp").innerText ="₹"+mrp;
-
-    var discount=mrp-amt;
+    var discount=totalmrp-totalamt;
     document.getElementById("totaldisc").innerText="₹"+discount;
+        
+    document.getElementById("qty").innerText="Qty:"+num;
 
     localStorage.setItem("McartData",JSON.stringify(cartobj));
-    displayData(cartobj);
+    
 element={};
 index=0;
 }

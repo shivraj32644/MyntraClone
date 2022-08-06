@@ -24,25 +24,27 @@
                     <p>Available Offers</p>
                 </div>
                 <div>
-                <p>10% Instant Discount on Kotak Credit and Debit Cards on a min spend of Rs 3,000. TCA</p>
-                <p>show More <span><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" class="offersV2-base-arrowIcon" style="transform: rotate(90deg);"><path fill-rule="evenodd" d="M6.797 5.529a.824.824 0 0 0-.042-.036L1.19.193a.724.724 0 0 0-.986 0 .643.643 0 0 0 0 .94L5.316 6 .203 10.868a.643.643 0 0 0 0 .938.724.724 0 0 0 .986 0l5.566-5.299a.644.644 0 0 0 .041-.978"></path></svg></span></p>
+                    <div>
+                        
+                <p>10% Instant Discount on Kotak Credit and Debit Cards on a min spend of</p>
+                <p> Rs 3,000.TCA</p>
+                    </div>
+                <p>Show More <span id="svg"><svg xmlns="http://www.w3.org/2000/svg" width="7" height="12" viewBox="0 0 7 12" class="offersV2-base-arrowIcon" style="transform: rotate(90deg);"><path fill-rule="evenodd" d="M6.797 5.529a.824.824 0 0 0-.042-.036L1.19.193a.724.724 0 0 0-.986 0 .643.643 0 0 0 0 .94L5.316 6 .203 10.868a.643.643 0 0 0 0 .938.724.724 0 0 0 .986 0l5.566-5.299a.644.644 0 0 0 .041-.978"></path></svg></span></p>
                 </div>
             </div>
             <div>
-                <img src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp" alt="">
+                <img height="22" width="32" src="https://constant.myntassets.com/checkout/assets/img/ship-free.webp" alt="">
                 <p>Yay! <span style="font-weight: bold;">No convenience fee</span> on this order</p>
             </div>
             <div id="bulkAction">
-                <div>
-                    <svg width="16px" height="16px" viewBox="0 0 16 16"><rect stroke="#282C3F" stroke-width="1.14" fill="#FFF" x="0.57" y="0.57" width="14.86" height="14.86" rx="1.7" fill-rule="evenodd" fill-opacity="0.5" class="bulkActionStrip-inActiveIcon"></rect></svg>
-                </div>
-                <div>0/1 ITEMS SELECTED</div>
+            
+                <div id="itemselected"> ITEMS SELECTED</div>
                 <div>
                     <button>REMOVE</button>
                     <button>MOVE TO WISHLIST</button>
                 </div>
             </div>
-            <div id="cartitemparent">
+            <div id="cartitemparent" class="cartitemparent">
             </div>
         </div>
         <div id="rightBlock">
@@ -62,62 +64,62 @@
                 <div id="priceBreakup">
                 </div>
             </div>
-        </div>
-        <div id="modal" class="modal">
-            <div class="popupdiv" id="popupdiv">
-                <div id="crossselect">
-                    <div>Select Quanity</div>
-                    <div>
-                        <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
-                    </div>
-                </div>
-                <div id="numdiv">
-                    <div id="num1" >1</div>
-                    <div id="num2" >2</div>
-                    <div id="num3" >3</div>
-                    <div id="num4" >4</div>
-                    <div id="num5" >5</div>
-                </div>
-                <button id="done" onclick="closePopup()">
-                    <div>DONE</div>
-                </button>
-            </div>
-            <div class="popupdiv" id="couponpopup">
-                <div id="crossselect">
-                    <div>APPLY COUPONS</div>
-                    <div>
-                        <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
-                    </div>
-                </div>
-                <div id="coupon-form-input">
-                    <div id="inputdiv">
-                        <input type="number" placeholder="Enter couponcode">
-                        <div>CHECK</div>
-                    </div>
-                </div>
-                <div id="couponform">
-                    <button onclick="applyCoupon()">MYNTRA 300</button>
-                    <p>Save ₹301</p>
-                    <p>Rs.300 off on minimum purchase of Rs.1499</p>
-                    <p>Expires on: 31st December 2022</p>
-                </div>
-                <div>
-                    <div id="saving">
+        </div >
+            <div id="modal" class="modal">
+                <div class="popupdiv" id="popupdiv">
+                    <div id="crossselect">
+                        <div>Select Quanity</div>
                         <div>
-                            <p>Maximum savings:</p>
-                            <p>₹301</p>
+                            <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
                         </div>
+                    </div>
+                    <div id="numdiv">
+                        <div id="num1" >1</div>
+                        <div id="num2" >2</div>
+                        <div id="num3" >3</div>
+                        <div id="num4" >4</div>
+                        <div id="num5" >5</div>
+                    </div>
+                    <button id="done" onclick="closePopup()">
+                        <div>DONE</div>
+                    </button>
+                </div>
+                <div class="popupdiv" id="couponpopup">
+                    <div id="crossselect">
+                        <div>APPLY COUPONS</div>
                         <div>
-                            <button id="done" onclick="closecoupon()">
-                                <div>APPLY</div>
-                            </button>
+                            <img src="https://cdn.onlinewebfonts.com/svg/img_265949.png" alt="">
                         </div>
+                    </div>
+                    <div id="coupon-form-input">
+                        <div id="inputdiv">
+                            <input type="number" placeholder="Enter couponcode">
+                            <div>CHECK</div>
+                        </div>
+                    </div>
+                    <div id="couponform">
+                        <button onclick="applyCoupon()">MYNTRA 300</button>
+                        <p>Save ₹301</p>
+                        <p>Rs.300 off on minimum purchase of Rs.1499</p>
+                        <p>Expires on: 31st December 2022</p>
+                    </div>
+                    <div>
+                        <div id="saving">
+                            <div>
+                                <p>Maximum savings:</p>
+                                <p>₹301</p>
+                            </div>
+                            <div>
+                                <button id="done" onclick="closecoupon()">
+                                    <div>APPLY</div>
+                                </button>
+                            </div>
+                        </div>
+                        
                     </div>
                     
                 </div>
-                
             </div>
-        </div>
     </div>
    
     
