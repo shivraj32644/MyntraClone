@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OTP</title>
     <style>
+      input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
       #parent {
         /* border: 6px solid crimson; */
         width: 30%;
@@ -62,15 +67,18 @@
         <br />
         <br />
         <div class="inp">
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
-          <input style="width: 10%; height: 40px" type="number" />
+          <input style="width: 10%; height: 40px" type="number" required/>
+          <input style="width: 10%; height: 40px" type="number" required/>
+          <input style="width: 10%; height: 40px" type="number" required/>
+          <input style="width: 10%; height: 40px" type="number" required />
         </div>
         <br />
         <p style="color: #ff667a">RESEND OTP</p>
         <br />
-        <button>Submit</button>
+        <a href="C:\Users\Admin\Desktop\Nav\MyntraClone\LOGIN\3rdPage.html">
+          <button>Submit</button>
+        </a>
+
         <div id="child2">
           <p>Log in using</p>
           <p style="color: #ff667a">Password</p>
@@ -85,3 +93,9 @@
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("form").addEventListener("submit", function () {
+    event.preventDefault();
+    location = "3rdPage.html";
+  });
+</script>

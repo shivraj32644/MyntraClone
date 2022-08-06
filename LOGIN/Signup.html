@@ -39,6 +39,7 @@
         background-color: #ff3f6c;
         color: white;
         border: none;
+        cursor: pointer;
       }
       #get {
         color: #ff3c6f;
@@ -51,6 +52,11 @@
         font-weight: 300;
         font-size: 20ipx;
       }
+      input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
     </style>
   </head>
   <body>
@@ -65,7 +71,15 @@
         <div id="child">
           <h2>Login <span class="or"> or </span> Signup</h2>
 
-          <input id="inp" type="number" placeholder=" +91 | Mobile Number*" />
+
+
+
+        
+
+
+
+
+          <input id="inp" type="number" placeholder=" +91 | Mobile Number*" required/>
 
           <br />
           <div id="child2">
@@ -80,9 +94,8 @@
               >&<span style="color: #ff3c6f"> Privacy Policy</span>
             </p>
           </div>
+          <button type="submit">CONTINUE</button>
 
-          <button>CONTINUE</button>
-          <br />
           <br />
           <p>Have trouble logging in? <span id="get">Get Help</span></p>
         </div>
@@ -90,3 +103,9 @@
     </div>
   </body>
 </html>
+<script>
+  document.querySelector("form").addEventListener("submit", function () {
+    event.preventDefault();
+    location = "otp.html";
+  });
+</script>
