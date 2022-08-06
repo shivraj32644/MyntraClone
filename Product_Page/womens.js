@@ -10,6 +10,8 @@ var WomensData = [
     rating: 3.2,
     popular: 8,
     new: 3,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -22,6 +24,8 @@ var WomensData = [
     rating: 4.4,
     popular: 5,
     new: 2,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -34,6 +38,8 @@ var WomensData = [
     rating: 4.2,
     popular: 0,
     new: 4,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -46,6 +52,7 @@ var WomensData = [
     rating: 4.1,
     popular: 01,
     new: 41,
+    quantity: 1,
   },
   {
     image_url:
@@ -58,6 +65,8 @@ var WomensData = [
     rating: 3.5,
     popular: 3,
     new: 9,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -70,6 +79,7 @@ var WomensData = [
     rating: 4.4,
     popular: 7,
     new: 12,
+    quantity: 1,
   },
   {
     image_url:
@@ -82,6 +92,7 @@ var WomensData = [
     rating: 3.3,
     popular: 6,
     new: 15,
+    quantity: 1,
   },
   {
     image_url:
@@ -94,6 +105,7 @@ var WomensData = [
     rating: 3.6,
     popular: 6,
     new: 16,
+    quantity: 1,
   },
   {
     image_url:
@@ -106,6 +118,7 @@ var WomensData = [
     rating: 4.1,
     popular: 1,
     new: 45,
+    quantity: 1,
   },
   {
     image_url:
@@ -118,6 +131,7 @@ var WomensData = [
     rating: 4.2,
     popular: 6,
     new: 32,
+    quantity: 1,
   },
   {
     image_url:
@@ -130,6 +144,7 @@ var WomensData = [
     rating: 3.9,
     popular: 3,
     new: 31,
+    quantity: 1,
   },
   {
     image_url:
@@ -142,6 +157,7 @@ var WomensData = [
     rating: 4.9,
     popular: 7,
     new: 23,
+    quantity: 1,
   },
   {
     image_url:
@@ -154,6 +170,7 @@ var WomensData = [
     rating: 4.7,
     popular: 7,
     new: 13,
+    quantity: 1,
   },
   {
     image_url:
@@ -166,6 +183,8 @@ var WomensData = [
     rating: 4.2,
     popular: 3,
     new: 7,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -178,6 +197,7 @@ var WomensData = [
     rating: 4.1,
     popular: 5,
     new: 33,
+    quantity: 1,
   },
   {
     image_url:
@@ -190,6 +210,7 @@ var WomensData = [
     rating: 4.6,
     popular: 8,
     new: 34,
+    quantity: 1,
   },
   {
     image_url:
@@ -202,6 +223,7 @@ var WomensData = [
     rating: 4.1,
     popular: 8,
     new: 36,
+    quantity: 1,
   },
   {
     image_url:
@@ -214,6 +236,7 @@ var WomensData = [
     rating: 3.5,
     popular: 6,
     new: 37,
+    quantity: 1,
   },
   {
     image_url:
@@ -226,6 +249,7 @@ var WomensData = [
     rating: 4.1,
     popular: 1,
     new: 39,
+    quantity: 1,
   },
   {
     image_url:
@@ -238,6 +262,7 @@ var WomensData = [
     rating: 4.1,
     popular: 0,
     new: 20,
+    quantity: 1,
   },
   {
     image_url:
@@ -250,6 +275,7 @@ var WomensData = [
     rating: 4.2,
     popular: 3,
     new: 21,
+    quantity: 1,
   },
   {
     image_url:
@@ -262,6 +288,7 @@ var WomensData = [
     rating: 4.3,
     popular: 8,
     new: 24,
+    quantity: 1,
   },
   {
     image_url:
@@ -274,6 +301,7 @@ var WomensData = [
     rating: 4.7,
     popular: 8,
     new: 26,
+    quantity: 1,
   },
   {
     image_url:
@@ -286,6 +314,7 @@ var WomensData = [
     rating: 4.2,
     popular: 5,
     new: 25,
+    quantity: 1,
   },
   {
     image_url:
@@ -298,6 +327,7 @@ var WomensData = [
     rating: 4,
     popular: 8,
     new: 27,
+    quantity: 1,
   },
   {
     image_url:
@@ -310,6 +340,7 @@ var WomensData = [
     rating: 4.7,
     popular: 3,
     new: 28,
+    quantity: 1,
   },
   {
     image_url:
@@ -322,6 +353,7 @@ var WomensData = [
     rating: 4.3,
     popular: 4,
     new: 29,
+    quantity: 1,
   },
   {
     image_url:
@@ -334,6 +366,7 @@ var WomensData = [
     rating: 4.8,
     popular: 6,
     new: 30,
+    quantity: 1,
   },
   {
     image_url:
@@ -346,6 +379,7 @@ var WomensData = [
     rating: 4.2,
     popular: 0,
     new: 10,
+    quantity: 1,
   },
   {
     image_url:
@@ -358,6 +392,7 @@ var WomensData = [
     rating: 4.5,
     popular: 8,
     new: 11,
+    quantity: 1,
   },
   {
     image_url:
@@ -370,6 +405,7 @@ var WomensData = [
     rating: 4.8,
     popular: 8,
     new: 12,
+    quantity: 1,
   },
   {
     image_url:
@@ -382,6 +418,7 @@ var WomensData = [
     rating: 4.9,
     popular: 5,
     new: 13,
+    quantity: 1,
   },
   {
     image_url:
@@ -394,6 +431,7 @@ var WomensData = [
     rating: 4.6,
     popular: 3,
     new: 14,
+    quantity: 1,
   },
   {
     image_url:
@@ -406,6 +444,7 @@ var WomensData = [
     rating: 3.8,
     popular: 2,
     new: 15,
+    quantity: 1,
   },
   {
     image_url:
@@ -418,6 +457,7 @@ var WomensData = [
     rating: 4.2,
     popular: 8,
     new: 16,
+    quantity: 1,
   },
   {
     image_url:
@@ -430,6 +470,7 @@ var WomensData = [
     rating: 4.4,
     popular: 7,
     new: 17,
+    quantity: 1,
   },
   {
     image_url:
@@ -442,6 +483,7 @@ var WomensData = [
     rating: 4.2,
     popular: 8,
     new: 18,
+    quantity: 1,
   },
   {
     image_url:
@@ -454,6 +496,7 @@ var WomensData = [
     rating: 4.1,
     popular: 4,
     new: 19,
+    quantity: 1,
   },
   {
     image_url:
@@ -466,6 +509,8 @@ var WomensData = [
     rating: 3.5,
     popular: 1,
     new: 1,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -478,6 +523,8 @@ var WomensData = [
     rating: 4.8,
     popular: 5,
     new: 2,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -490,6 +537,8 @@ var WomensData = [
     rating: 4,
     popular: 1,
     new: 3,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -502,6 +551,8 @@ var WomensData = [
     rating: 4.5,
     popular: 3,
     new: 4,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -514,6 +565,8 @@ var WomensData = [
     rating: 4.8,
     popular: 6,
     new: 5,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -526,6 +579,8 @@ var WomensData = [
     rating: 4.1,
     popular: 2,
     new: 6,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -538,6 +593,8 @@ var WomensData = [
     rating: 4.4,
     popular: 5,
     new: 7,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -550,6 +607,8 @@ var WomensData = [
     rating: 4,
     popular: 8,
     new: 9,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -562,6 +621,8 @@ var WomensData = [
     rating: 4.9,
     popular: 1,
     new: 8,
+
+    quantity: 1,
   },
   {
     image_url:
@@ -574,6 +635,7 @@ var WomensData = [
     rating: 4.6,
     popular: 5,
     new: 41,
+    quantity: 1,
   },
   {
     image_url:
@@ -586,6 +648,7 @@ var WomensData = [
     rating: 3.2,
     popular: 3,
     new: 42,
+    quantity: 1,
   },
   {
     image_url:
@@ -598,6 +661,7 @@ var WomensData = [
     rating: 4.7,
     popular: 4,
     new: 43,
+    quantity: 1,
   },
 ];
 
@@ -695,10 +759,32 @@ function displayData(data) {
 
 var McartArr = JSON.parse(localStorage.getItem("McartData")) || [];
 function addToCart(i) {
-  var product = WomensData.filter(function (elem, index) {
-    return index == i;
+  // var product = WomensData.filter(function (elem, index) {
+  //   return index == i;
+  // });
+  // McartArr.push(product[0]);
+  // localStorage.setItem("McartData", JSON.stringify(McartArr));
+  // console.log(JSON.parse(localStorage.getItem("McartData")));
+  var product = WomensData[i];
+  var checkProduct = [];
+  var ind = 0;
+  McartArr.forEach(function (elem, index) {
+    if (
+      elem.image_url === product.image_url &&
+      elem.name === product.name &&
+      elem.price === product.price &&
+      elem.strikedoffprice === product.strikedoffprice
+    ) {
+      checkProduct.push(elem);
+      ind = index;
+    }
   });
-  McartArr.push(product[0]);
+  if (checkProduct.length === 0) {
+    product.quantity = 1;
+    McartArr.push(product);
+  } else {
+    McartArr[ind].quantity += 1;
+  }
   localStorage.setItem("McartData", JSON.stringify(McartArr));
-  console.log(JSON.parse(localStorage.getItem("McartData")));
+
 }

@@ -773,12 +773,12 @@ function addToCart(i) {
     }
   });
   if (checkProduct.length === 0) {
-    // product.quantity = 1;
+    product.quantity = 1;
     McartArr.push(product);
   } else {
     McartArr[ind].quantity += 1;
   }
   localStorage.setItem("McartData", JSON.stringify(McartArr));
-  console.log(product);
-  console.log(McartData);
+  
 }
+

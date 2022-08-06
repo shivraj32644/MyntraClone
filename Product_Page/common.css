@@ -270,7 +270,7 @@ body{
   height: 35px; 
   width: 90%;
   margin: auto;
-  display: flex;
+  
 
   justify-content: center;
   
@@ -286,8 +286,19 @@ body{
   
  }  
 
-
-
+ #btn:hover,
+ #btn:focus {
+   border-color: rgba(0, 0, 0, 0.15);
+   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+   color: rgba(0, 0, 0, 0.65);
+ }
+ #btn:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
 
 #btn:hover {
   border: 1px solid black;
