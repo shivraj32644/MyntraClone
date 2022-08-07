@@ -8,6 +8,10 @@ var totaldisc=0;
 displayData(cartobj);
 
 function displayData(data){
+
+    totalamt=0;
+     totalmrp=0;
+totaldisc=0;
     
     
     document.querySelector("#cartitemparent").innerHTML = "";
@@ -83,8 +87,9 @@ function displayData(data){
         document.getElementById("itemselected").innerText= cartobj.length+" ITEMS SELECTED";
 
     })
+    displayRightside();
 }
-displayRightside()
+
 
 function displayRightside(){
     document.getElementById("priceBreakup").innerHTML="";
@@ -137,6 +142,7 @@ function displayRightside(){
 
     document.getElementById("priceBreakup").append(mrpdiv,discdiv,coupondiv,convdiv,totaldiv,btn);
 
+    console.log(totalamt+"totalamtfinal");
 
 }
 function removeRow(index){
@@ -196,39 +202,34 @@ document.getElementById("num5").addEventListener("click",function(){
     var num=parseInt(event.target.innerText);
     multiplyQty(element,num,cartobj,i);
 })
-// function multiplyQty(element,num,cartobj,i){
-// console.log(num);
-// updateAmount(element,num,cartobj,i);
-// }
+
 function  multiplyQty(element,num,cartobj,i){
    var num1=parseInt(cartobj[i].quantity);
     cartobj[i].quantity=num;
     var price=parseInt(cartobj[i].price);
-    console.log(num+"num");
-    console.log(price+" price");
+    
     // cartobj[i].price=price*num;
     
     document.getElementById("price").innerText=price*num;
 
     var strikedoffprice=parseInt(cartobj[i].strikedoffprice);
-    console.log(strikedoffprice+"strkd");
+    
     // cartobj[i].strikedoffprice=strikedoffprice*num;
     document.getElementById("strikedoffprice").innerText=strikedoffprice*num;
-        console.log(num-num1);
-     totalamt += ((price)*(num-num1));
-    console.log(totalamt+"totalamt");
-    document.getElementById("totalamt").innerText ="₹"+totalamt;
+    //  totalamt += ((price)*(num-num1));
+    // document.getElementById("totalamt").innerText ="₹"+totalamt;
 
-      totalmrp += ((strikedoffprice)*(num-num1));
-      console.log(totalmrp+"ttlmrp");
-    document.getElementById("totalmrp").innerText ="₹"+totalmrp;
+    //   totalmrp += ((strikedoffprice)*(num-num1));
+    // document.getElementById("totalmrp").innerText ="₹"+totalmrp;
 
-    var discount=totalmrp-totalamt;
-    document.getElementById("totaldisc").innerText="₹"+discount;
+    // var discount=totalmrp-totalamt;
+    // document.getElementById("totaldisc").innerText="₹"+discount;
         
-    document.getElementById("qty").innerText="Qty:"+num;
+    // document.getElementById("qty").innerText="Qty:"+num;
 
     localStorage.setItem("McartData",JSON.stringify(cartobj));
+    console.log(totalamt+"totalamtqty");
+    displayData(cartobj);
     
 element={};
 index=0;
