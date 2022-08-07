@@ -62,7 +62,7 @@
   /* .menu-bar ul li span{
     border: 1px solid #000;
   } */
-  input {
+  li + input {
     border: 1px solid #000;
     /* height: 30px; */
     /* margin-top: 30px; */
