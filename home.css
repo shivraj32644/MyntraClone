@@ -178,12 +178,10 @@
   .img-link-container-9,
   .img-link-container-10 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 2px;
     grid-row-gap: 0;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 40px;
+    
   }
 
 
