@@ -96,6 +96,13 @@ input::-webkit-inner-spin-button {
 <script>
   document.querySelector("form").addEventListener("submit", function () {
     event.preventDefault();
+  var userOTP =  document.querySelector(".inp");
+  if(userOTP.value===1234){
     location = "3rdPage.html";
+  }else{
+    alert("Please enter correct OTP")
+  }
+   
+
   });
 </script>

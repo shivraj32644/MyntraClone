@@ -82,6 +82,7 @@ img {
 }
 .menHover6:hover {
   border-bottom: 4px solid saddlebrown;
+
 }
 .menu-bar ul li:hover .sub-menu-1 {
   display: flex;
@@ -129,6 +130,7 @@ ul > li:nth-child(5) {
   box-sizing: border-box;
   justify-content: center;
 }
+
 .pro > span {
   /* border: 2px solid crimson; */
   margin-left: 45px;
@@ -153,3 +155,19 @@ ul > li:nth-child(5) {
  padding: 5px;
 font-size:xx-small ;
 }
+.bottomWear{
+  background-color:rgb(250, 250, 250);
+}
+#std{
+  height: 300px;
+ width: 100%;
+ margin: auto;
+}
+#studioDiv{
+  width: 500px;
+  
+}
+
+
+
+
