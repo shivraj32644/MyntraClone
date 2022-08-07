@@ -41,7 +41,7 @@ function showCod(){
     btn.addEventListener("click", function(){
         event.preventDefault();
         alert("Order confirmed")
-        location = "https://www.myntra.com/";
+        location = "thankYou.html";
     });
     form.append(div, btn);
 }
