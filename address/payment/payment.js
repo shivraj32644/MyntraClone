@@ -11,7 +11,7 @@ function showCard(){
     var btn = document.querySelector(".payNowAjax-base-actionButton");
     btn.addEventListener("click", function(){
         event.preventDefault();
-        location = "https://www.myntra.com";
+        location = ".thankyou.html";
     })
 }
 document.getElementById("cod").addEventListener("click", showCod);
