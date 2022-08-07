@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #forgot {
+        display: flex;
+      }
+      #have {
+        display: flex;
+      }
+      form {
+        text-align: left;
+      }
+      body {
+        background-color: #fcefe9;
+      }
+      #parent {
+        /* border: 2px solid cornflowerblue; */
+        width: 24%;
+        margin: auto;
+
+        /* height: 400px; */
+        background-color: #ffffff;
+        padding: 20px 40px 150px;
+        margin: 30px auto;
+        /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+      }
+      h2 {
+        font-size: 25px;
+        margin-bottom: 33px;
+        margin-top: 40px;
+        color: #424553;
+      }
+      #email {
+        border: 1px solid #d4d5d9;
+        /* font-size: 12px; */
+        width: 100%;
+        /* height: 32px; */
+        color: #282c3f;
+        padding: 12px 10px;
+        box-sizing: border-box;
+      }
+      #password {
+        border: 1px solid #d4d5d9;
+        width: 100%;
+        /* height: 32px; */
+        padding: 12px 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+      button {
+        width: 100%;
+        /* height: 40px; */
+        padding: 12px 10px;
+        font-size: 15px;
+        background-color: #ff3f6c;
+        color: white;
+        border: none;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+      }
+      .reset {
+        color: #ff3e6c;
+      }
+      p {
+        color: #282c3f;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="parent">
+      <h2>Login with email</h2>
+      <form>
+        <input id="email" type="text" placeholder="Email*" required />
+        <br />
+        <br />
+        <input id="password" type="text" placeholder="Password*" required />
+        <br />
+        <br />
+        <button>Login</button>
+        <div id="forgot">
+          <p>Forgot your password? &nbsp</p>
+
+          <p class="reset">Reset Here</p>
+        </div>
+        <div id="have">
+          <p>Have trouble logging in? &nbsp</p>
+
+          <p class="reset">Get Help</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+<script>
+  document.querySelector("form").addEventListener("submit", loginData);
+  var arrayData = JSON.parse(localStorage.getItem("arraylist")) || [];
+  function loginData() {
+    event.preventDefault();
+    var loginEmail = document.getElementById("email").value;
+    var loginPassword = document.getElementById("password").value;
+    console.log(arrayData);
+    if (arrayData.length === 0) {
+      alert("Please Signup First");
+    } else {
+      var flag = false;
+      arrayData.forEach(function (element) {
+        if (
+          element.Email1 === loginEmail &&
+          element.Password1 === loginPassword
+        ) {
+          flag = true;
+          return;
+        }
+      });
+      if (flag == true) {
+        alert("Login Successfull");
+      } else {
+        alert("Wrong Password");
+      }
+    }
+    console.log(loginEmail, loginPassword);
+  }
+</script>
