@@ -139,6 +139,9 @@ function displayRightside(){
 
     var btn=document.createElement("button");
     btn.innerText="PLACE ORDER";
+    btn.addEventListener("click", function(){
+        location = "../address/address.html"
+    })
 
     document.getElementById("priceBreakup").append(mrpdiv,discdiv,coupondiv,convdiv,totaldiv,btn);
 
