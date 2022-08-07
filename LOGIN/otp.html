@@ -7,10 +7,10 @@
     <title>OTP</title>
     <style>
       input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
       #parent {
         /* border: 6px solid crimson; */
         width: 30%;
@@ -67,17 +67,37 @@ input::-webkit-inner-spin-button {
         <br />
         <br />
         <div class="inp">
-          <input style="width: 10%; height: 40px" type="number" required/>
-          <input style="width: 10%; height: 40px" type="number" required/>
-          <input style="width: 10%; height: 40px" type="number" required/>
-          <input style="width: 10%; height: 40px" type="number" required />
+          <input
+            id="id1"
+            style="width: 10%; height: 40px"
+            type="number"
+            required
+          />
+          <input
+            id="id2"
+            style="width: 10%; height: 40px"
+            type="number"
+            required
+          />
+          <input
+            id="id3"
+            style="width: 10%; height: 40px"
+            type="number"
+            required
+          />
+          <input
+            id="id4"
+            style="width: 10%; height: 40px"
+            type="number"
+            required
+          />
         </div>
         <br />
         <p style="color: #ff667a">RESEND OTP</p>
         <br />
-        <a href="C:\Users\Admin\Desktop\Nav\MyntraClone\LOGIN\3rdPage.html">
-          <button>Submit</button>
-        </a>
+        <!-- <a href="C:\Users\Admin\Desktop\Nav\MyntraClone\LOGIN\3rdPage.html"> -->
+        <button type="submit">Submit</button>
+        <!-- </a> -->
 
         <div id="child2">
           <p>Log in using</p>
@@ -96,13 +116,15 @@ input::-webkit-inner-spin-button {
 <script>
   document.querySelector("form").addEventListener("submit", function () {
     event.preventDefault();
-  var userOTP =  document.querySelector(".inp");
-  if(userOTP.value===1234){
-    location = "3rdPage.html";
-  }else{
-    alert("Please enter correct OTP")
-  }
-   
-
+    var id1 = document.getElementById("id1").value;
+    var id2 = document.getElementById("id2").value;
+    var id3 = document.getElementById("id3").value;
+    var id4 = document.getElementById("id4").value;
+    console.log(id1, id2, id3, id4);
+    if (id1 + id2 + id3 + id4 == "1234") {
+      location = "3rdPage.html";
+    } else {
+      alert("Enter correct OTP");
+    }
   });
 </script>
