@@ -233,6 +233,10 @@ svg+p{
     padding: 0;
     
 }
+.rightchild>div:nth-child(3)>button{
+    cursor: pointer;
+
+}
 .rightchild>div:nth-child(4){
     display: flex;
     margin-left: 0;

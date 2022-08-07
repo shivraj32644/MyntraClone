@@ -11,7 +11,7 @@ function displayData(data){
 
     totalamt=0;
      totalmrp=0;
-totaldisc=0;
+    totaldisc=0;
     
     
     document.querySelector("#cartitemparent").innerHTML = "";
@@ -57,7 +57,7 @@ totaldisc=0;
         var off=Math.round(((elem.strikedoffprice-elem.price)/elem.strikedoffprice)*100);
         disc.innerText=off+"% OFF";
         disc.style.color="#f16565";
-        totaldisc+=parseInt(elem.strikedoffprice-elem.price);
+        totaldisc+=parseInt(elem.strikedoffprice-elem.price)*(parseInt(elem.quantity));
         prizediv.append(price,strikedoffprice,disc);
 
         var delivery=document.createElement("div");
@@ -114,6 +114,7 @@ function displayRightside(){
     var coupon2=document.createElement("div");
     coupon1.innerText="Coupon Discount";
     coupon2.innerText="Apply Coupon";
+    coupon2.setAttribute("id","cpn300");
     coupondiv.append(coupon1,coupon2);
 
     var convdiv=document.createElement("div");
@@ -239,7 +240,14 @@ index=0;
 function applyCoupon(){
     if(totalamt>1499){
         totalamt-=301;
+        document.getElementById("inputdiv").innerHTML="";
+        document.getElementById("inputdiv").innerText="COUPON APPLIED";
+        document.getElementById("inputdiv").style.color="#ff3f6c";
+        // document.getElementById("inputdiv").style.border="none";
+        document.getElementById("inputdiv").style.padding="5px 80px";
+        
         displayRightside();
+        document.getElementById("cpn300").innerText="-₹300";
     }
     
 }
