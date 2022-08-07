@@ -50,6 +50,61 @@ div {
     background: #f4f4f5;
     min-height: 600px;
 }
+.desktop-base-cardLayout {
+    max-width: 980px;
+    margin: 0 auto;
+}
+.desktop-base-cardContainer {
+    width: 100%;
+    margin: 70px auto;
+    display: inline-block;
+    border: 1px solid #d4d5d9;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
+.confirmationScreen-base-confirmationComp {
+    overflow-x: hidden;
+}
+.confirmationScreen-base-invisible {
+    display: none;
+}
+.desktop-base-confirmationCardContainer {
+    padding-bottom: 48px;
+    padding-top: 16px;
+}
+
+.desktop-base-confirmationCard {
+    max-width: 60%;
+    margin-bottom: 16px;
+    border: 1px solid #e9e9eb;
+    border-radius: 4px;
+}
+
+.cardComponents-base-desktopStatusCardContainer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.cardComponents-base-statusCardContainer {
+    padding: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
