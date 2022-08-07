@@ -144,6 +144,8 @@ function displayRightside(){
 
     console.log(totalamt+"totalamtfinal");
 
+    localStorage.setItem("totalamoumt",JSON.stringify(totalamt));
+
 }
 function removeRow(index){
 

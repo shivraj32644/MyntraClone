@@ -147,7 +147,12 @@ svg+p{
 }
 .cartitemparent{
     width: 600px;
+    
+}
+#cartitemparent>div{
     border: 1px solid #eaeaec;
+    padding: 8px;
+    margin-top: 10px;
 }
 #rightBlock{
     vertical-align: top;
@@ -394,8 +399,9 @@ svg+p{
 #numdiv>div{
     border: 1px solid black;
     border-radius: 25px;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
+    padding: 9px 4px 0px 4px;
     margin-top: 8px;
     text-align:center;
     align-content: space-around;
@@ -458,7 +464,6 @@ svg+p{
 
 /* footer */
 #footer {
-    border: 1px solid black;
     border-top: 1px solid #F5F5F6;
     align-items: flex-end;
 }
@@ -486,4 +491,22 @@ svg+p{
     font-size: 14px;
     /* float: right; */
     padding: 10px 0;
+}
+#inputdiv{
+    display: flex;
+    justify-content: space-between;
+}
+#couponform{
+    margin-top: 7px;
+
+}
+#couponform>button{
+    color: #ff3f6c;
+    border: 1px dashed #ff3f6c;
+    border-radius: 3px;
+    
+    padding: 8px 12px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
+    font-weight: 600;
 }
