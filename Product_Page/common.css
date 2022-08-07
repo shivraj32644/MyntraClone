@@ -5,17 +5,18 @@ body{
 
 #navbar {
   height: 60px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  left: 0;
-  right: 0;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
+  /* left: 0;
+  right: 0; */
   text-align: center;
-  margin-left: -20px;
+  /* margin-left: -20px;
   margin-right: -10px;
-  margin-top: -10px;
-  margin-bottom: 20px;
+  margin-top: -10px; */
+  /* margin-bottom: 20px; */
   
 }
 #path {
+  margin-top: 30px;
   height: 18px;
   font-size: 14px;
 }
