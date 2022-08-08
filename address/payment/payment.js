@@ -50,3 +50,4 @@ var addressTotalObj = JSON.parse(localStorage.getItem("addressTotalObj"));
 document.getElementById("totalmrp").innerText = addressTotalObj.totalmrp;
 document.getElementById("totaldisc").innerText = addressTotalObj.totaldisc;
 document.getElementById("totalamt").innerText = addressTotalObj.totalamt;
+document.getElementById("priceDetails").innerText = addressTotalObj.totalItem;

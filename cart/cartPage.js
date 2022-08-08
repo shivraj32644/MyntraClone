@@ -11,7 +11,7 @@ displayData(cartobj);
 function displayData(data){
 
     totalamt=0;
-     totalmrp=0;
+    totalmrp=0;
     totaldisc=0;
     
     
@@ -77,7 +77,7 @@ function displayData(data){
         crossdiv.setAttribute("class","crossdiv");
         crossdiv.append(cross);
         crossdiv.addEventListener("click",function(){
-           removeRow(index)
+            removeRow(index)
         });
 
         var cartitemdiv=document.createElement("div");
@@ -148,9 +148,10 @@ function displayRightside(){
 
     document.getElementById("priceBreakup").append(mrpdiv,discdiv,coupondiv,convdiv,totaldiv,btn);
 
-
+    document.getElementById("priceDetails").innerText = cartobj.length;
     // address page total Object 
     var addressTotalObj = {
+        totalItem: cartobj.length,
         totalmrp: totalmrp,
         totaldisc: totaldisc,
         totalamt: totalamt,

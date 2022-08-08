@@ -57,8 +57,7 @@
                                 </div>
                                 <div class="addressDesktop-base-right">
                                     <div class="priceBlockCommon-base-container ">
-                                        <div id="priceBlockHeader" class="priceBlockCommon-base-items">PRICE DETAILS (1
-                                            Item)</div>
+                                        <div id="priceBlockHeader" class="priceBlockCommon-base-items">PRICE DETAILS (<span id="priceDetails">0</span> Items)</div>
                                         <div class="priceBlockCommon-base-detailBody">
                                             <div class="priceBreakUp-base-orderSummary" id="priceBlock">
                                                 <div class="priceDetail-base-row">
@@ -156,7 +155,7 @@
     document.getElementById("totalmrp").innerText = addressTotalObj.totalmrp;
     document.getElementById("totaldisc").innerText = addressTotalObj.totaldisc;
     document.getElementById("totalamt").innerText = addressTotalObj.totalamt;
-
+    document.getElementById("priceDetails").innerText = addressTotalObj.totalItem;
     
     document.querySelector("form").addEventListener("submit", function(){
         event.preventDefault();
