@@ -742,6 +742,7 @@ var mensData = [
       btn.addEventListener("click", function () {
         //
         addToCart(index);
+        displayCartTotal();
       });
   
       Pricediv.append(Dis_price, Ori_price, discount);
@@ -782,3 +783,17 @@ var mensData = [
     
   }
   
+
+  displayCartTotal();
+  // last change by abhi
+  function displayCartTotal() {
+    localStorage.setItem("cartTotalBag", JSON.stringify(McartArr.length));
+    var addressTotalObj = JSON.parse(localStorage.getItem("cartTotalBag"));
+    var cartCurrentItemShow = document.getElementById("cartCurrentItemShow");
+    if(addressTotalObj > 0){
+      cartCurrentItemShow.setAttribute("class", "desktop-badge desktop-melon");
+      document.getElementById("cartCurrentItemShow").innerText = addressTotalObj;
+
+      localStorage.setItem("cartTotalBag", JSON.stringify(addressTotalObj));
+    }
+  }

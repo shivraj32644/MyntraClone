@@ -414,3 +414,29 @@ visibility: visible;
 #sb4 h4{
   color: #0db7af;
 }
+
+
+
+
+/* last change by abhijeet  */
+
+.desktop-melon {
+  background-color: #f16565;
+}
+
+.desktop-badge {
+  white-space: nowrap;
+  text-align: center;
+  line-height: 18px;
+  padding: 0 6px;
+  height: 18px;
+  background: #ff3f6c;
+  position: absolute;
+  border-radius: 50%;
+  /* font-size: 12px; */
+  color: #fff;
+  /* left: 2px; */
+  /* top: -2px; */
+  margin-left: 10px;
+  font-weight: 700;
+}

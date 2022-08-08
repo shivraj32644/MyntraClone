@@ -604,6 +604,7 @@
                   src="https://cdn-icons-png.flaticon.com/512/1656/1656850.png"
                   alt=""
                 />
+                <span id="cartCurrentItemShow" data-reactid="901" style="font-size: 11px; margin-left: 10px;"></span>
                 <span style="margin-left: -4px; margin-top: -3px;">Bag</span>
               </div></a
             >
@@ -1119,9 +1120,24 @@
 
 
 
-  var CustomerData =JSON.parse(localStorage.getItem("arraylist"));
+  var CustomerData =JSON.parse(localStorage.getItem("arraylist")) || [];
+  if(CustomerData.length>0){
   document.getElementById("logbtn").innerText=CustomerData[CustomerData.length-1].Name1;
-  console.log(CustomerData);
+  // console.log(CustomerData);
+  }
 
+  // displayCartTotal();
+  // last change by abhi
+  // function displayCartTotal() {
+    var bagTotal = JSON.parse(localStorage.getItem("cartTotalBag"));
+    // console.log(bagTotal, "test");
+    if(bagTotal > 0){
+      var cartCurrentItemShow = document.getElementById("cartCurrentItemShow");
+      cartCurrentItemShow.setAttribute("class", "desktop-badge desktop-melon");
+      document.getElementById("cartCurrentItemShow").innerText = bagTotal;
+
+      localStorage.setItem("cartTotalBag", JSON.stringify(bagTotal));
+    }
+  // }
 
 </script>

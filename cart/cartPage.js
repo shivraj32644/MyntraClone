@@ -169,7 +169,7 @@ function removeRow(index){
     
     console.log(cartobj[index].quantity);
     cartobj.splice(index, 1);
-    
+    localStorage.setItem("cartTotalBag", JSON.stringify(cartobj.length));
     localStorage.setItem("McartData", JSON.stringify(cartobj));
     displayData(cartobj);
     displayRightside();
