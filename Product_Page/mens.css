@@ -14,7 +14,7 @@
   }
   #text >div p,li{
     /* background-color: red; */
-    font-size: 13.5px;
+    /* font-size: 13.5px; */
   }
   #text div:first-child {
     width: 90%;

@@ -110,7 +110,8 @@
     color: black;
   }
   .sub-menu-1 a{
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: 10px;
   }
   .menHover:hover {
     border-bottom: 4px solid rgb(238, 0, 119);
