@@ -43,11 +43,19 @@ div {
     margin-right: 5px;
 }
 
+/* bag nev line  */
+.cart-page{
+    text-decoration: none;
+    color: #696B79;
+}
 /* link change in address nav  */
 .address-middle{
     text-decoration: none;
     color: #696B79;
 }
+
+
+
 
 
 

@@ -429,9 +429,20 @@ svg+p{
     visibility: visible;
 }
 
+
+
+
+
 /* navbar */
 
+body{
+    font-family: Whitney, Helvetica, Arial, sans-serif !important;
+    color: #424553;
+}
+
+
 #headerUnderline {
+    line-height: 2.428571;
     width: 100%;
     border-bottom: 1px solid #F5F5F6;
     margin-bottom: 30px;
