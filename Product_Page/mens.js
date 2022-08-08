@@ -662,7 +662,8 @@ var mensData = [
     displayData(mensData);
   });
   
-  function sort() {
+function sort() {
+  
     var value = document.getElementById("chooseItem").value;
   
     if (value === "hlt") {
@@ -697,12 +698,26 @@ var mensData = [
         return b.rating - a.rating;
       });
     }
-    if (value === "Recommended") {
-      return 1;
-    }
+    
     displayData(mensData);
     console.log(mensData);
-  }
+}
+  
+function filterClothes() {
+  
+  var temp = event.target.value;
+
+  
+  var filterArr = mensData.filter(function (element) {
+    return temp === element.brand;
+  });
+  console.log("temp", temp);
+  displayData(filterArr);
+}
+
+
+
+
   
   function displayData(data) {
     document.getElementById("product").innerText = "";
