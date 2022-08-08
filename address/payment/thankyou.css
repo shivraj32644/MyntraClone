@@ -28,8 +28,8 @@ div {
     letter-spacing: 3px;
     font-weight: bolder;
 }
-
-/* .navbarMiddlePayment {
+/* 
+.navbarMiddlePayment {
     color: #20BD99;
     border-bottom: 2px solid #20BD99;
 } */
@@ -70,8 +70,8 @@ div {
     display: none;
 }
 .desktop-base-confirmationCardContainer {
-    padding-bottom: 48px;
-    padding-top: 16px;
+    padding-bottom: 40px;
+    padding-top: 30px;
 }
 
 .desktop-base-confirmationCard {
@@ -86,7 +86,7 @@ div {
     padding-bottom: 48px;
 }
 .cardComponents-base-statusCardContainer {
-    padding: 16px;
+    /* padding: 16px; */
     text-align: center;
 }
 .desktop-base-confirmationCard {
@@ -105,14 +105,11 @@ div {
     height: 46px;
     margin-bottom: 16px;
 }
-.cardComponents-base-desktopStatusCardHeading {
-    font-size: 32px;
-}
 
 .cardComponents-base-statusCardHeading {
-    font-size: 16px;
+    font-size: 30px;
     font-weight: 600;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 .cardComponents-base-statusSuccessHeading {
     color: #03a685;
@@ -121,8 +118,11 @@ div {
     font-size: 18px;
 }
 .cardComponents-base-statusCardDesc {
-    font-size: 14px;
+    font-size: 17px;
+    font-weight: 300;
     color: #282c3f;
+    line-height: 1.8;
+    padding: 15px;
 }
 .cardComponents-base-deliveryTopSection {
     display: flex;
@@ -177,10 +177,17 @@ div {
     border-radius: 2px;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin: auto;
 }
 .cardComponents-base-primaryCTAButton {
     width: 45%;
 }
+
+.continueBtnUnderLine{
+    text-decoration: none;
+}
+
+
 
 
 
