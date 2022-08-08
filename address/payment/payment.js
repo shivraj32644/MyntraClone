@@ -11,7 +11,7 @@ function showCard(){
     var btn = document.querySelector(".payNowAjax-base-actionButton");
     btn.addEventListener("click", function(){
         event.preventDefault();
-        location = ".thankyou.html";
+        window.location = "thankyou.html";
     })
 }
 document.getElementById("cod").addEventListener("click", showCod);
@@ -40,8 +40,13 @@ function showCod(){
     // var formbtn = document.querySelector(".payNowAjax-base-actionButton");
     btn.addEventListener("click", function(){
         event.preventDefault();
-        alert("Order confirmed")
+        // alert("Order confirmed")
         location = "thankYou.html";
     });
     form.append(div, btn);
 }
+
+var addressTotalObj = JSON.parse(localStorage.getItem("addressTotalObj"));
+document.getElementById("totalmrp").innerText = addressTotalObj.totalmrp;
+document.getElementById("totaldisc").innerText = addressTotalObj.totaldisc;
+document.getElementById("totalamt").innerText = addressTotalObj.totalamt;

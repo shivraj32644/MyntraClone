@@ -43,6 +43,13 @@ div {
     margin-right: 5px;
 }
 
+/* bag nev line  */
+.cart-page{
+    text-decoration: none;
+    color: #696B79;
+}
+
+
 
 /* middle  */
 
@@ -193,6 +200,25 @@ button, input, select, textarea {
     border-top: 1px solid #eaeaec;
     color: #3e4152;
     line-height: 16px;
+}
+#convenienceFee{
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+
+#totaldisc{
+    color: #03a685;
+}
+.priceDetail-base-discount {
+    color: #03a685;
+}
+.priceDetail-base-discount .priceDetail-base-icon {
+    fill: #03a685;
+}
+
+.convienceFee {
+    margin-top: 10px;
 }
 
 

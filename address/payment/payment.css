@@ -43,6 +43,13 @@ div {
     margin-right: 5px;
 }
 
+/* link change in address nav  */
+.address-middle{
+    text-decoration: none;
+    color: #696B79;
+}
+
+
 
 /* middle content */
 
@@ -411,6 +418,13 @@ svg:not(:root) {
 svg:not(:root) {
     overflow: hidden;
 }
+
+#convenienceFee{
+    text-decoration: line-through;
+    font-weight: 400;
+}
+
+
 
 
 /* footer part */

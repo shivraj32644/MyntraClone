@@ -1,4 +1,5 @@
 var cartobj= JSON.parse(localStorage.getItem("McartData"))||[];
+
 console.log(cartobj);
 
 var totalamt=0;
@@ -147,9 +148,15 @@ function displayRightside(){
 
     document.getElementById("priceBreakup").append(mrpdiv,discdiv,coupondiv,convdiv,totaldiv,btn);
 
-    console.log(totalamt+"totalamtfinal");
 
-    localStorage.setItem("totalamoumt",JSON.stringify(totalamt));
+    // address page total Object 
+    var addressTotalObj = {
+        totalmrp: totalmrp,
+        totaldisc: totaldisc,
+        totalamt: totalamt,
+    }
+    console.log(totalamt+"totalamtfinal");
+    localStorage.setItem("addressTotalObj",JSON.stringify(addressTotalObj));
 
 }
 function removeRow(index){
