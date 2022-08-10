@@ -703,12 +703,7 @@ function sort() {
 }
 
 
-
-
 // new change lower  side
-
-
-
 
 
 var checkboxArr = document.querySelectorAll(".checkbox");
@@ -854,11 +849,9 @@ for (var i = 0; i < checkboxArr.length; i++) {
 
 
 
-
-
-
-
 // new change upper side
+
+
 
 function displayData(data) {
   document.getElementById("product").innerText = "";
@@ -951,3 +944,9 @@ function displayCartTotal() {
     localStorage.setItem("cartTotalBag", JSON.stringify(addressTotalObj));
   }
 }
+
+
+
+
+
+// search product 

@@ -711,6 +711,201 @@ var WomensData = [
     console.log(WomensData);
   }
   
+
+
+
+
+
+// new change lower  side
+
+
+
+var checkboxArr = document.querySelectorAll(".checkbox");
+
+var brandFilter1 = document.querySelector("#brand-filter1");
+var brandFilter2 = document.querySelector("#brand-filter2");
+var brandFilter3 = document.querySelector("#brand-filter3");
+var brandFilter4 = document.querySelector("#brand-filter4");
+var brandFilter5 = document.querySelector("#brand-filter5");
+var brandFilter6 = document.querySelector("#brand-filter6");
+var brandFilter7 = document.querySelector("#brand-filter7");
+var brandFilter8 = document.querySelector("#brand-filter8");
+var brandFilter9 = document.querySelector("#brand-filter9");
+var brandFilter10 = document.querySelector("#brand-filter10");
+var brandFilter11 = document.querySelector("#brand-filter11");
+var brandFilter9 = document.querySelector("#brand-filter12");
+var brandFilter10 = document.querySelector("#brand-filter13");
+var brandFilter11 = document.querySelector("#brand-filter14");
+
+// console.log(checkboxArr);
+for (var i = 0; i < checkboxArr.length; i++) {
+  checkboxArr[i].addEventListener("click", function () {
+    var newArr = [];
+    console.log(brandFilter1.checked);
+    if (brandFilter1.checked === true) {
+      newArr = WomensData.filter(function (elem) {
+        return elem.brand == "";
+      });
+    }
+
+    if (brandFilter2.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter3.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "7Threads";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter4.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "Ethinic Basket";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter5.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "KALINI";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter6.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "Anouk";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter7.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "Indo Era";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter8.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "Varanga";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter9.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "Sangria";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+    if (brandFilter10.checked === true) {
+      var tempArr = WomensData.filter(function (elem) {
+        return elem.brand == "1 Stop Fashion";
+      });
+      for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+      }
+    }
+
+  // price shorting
+
+  if (brandFilter11.checked === true) {
+    var tempArr = WomensData.filter(function (elem) {
+        return +elem.price <= 5385;
+    });
+    for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+    }
+  }
+
+  if (brandFilter12.checked === true) {
+    var tempArr = WomensData.filter(function (elem) {
+        return +elem.price >= 5385 && +elem.price <= 10491;
+    });
+    for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+    }
+  }
+
+  if (brandFilter13.checked === true) {
+    var tempArr = WomensData.filter(function (elem) {
+        return +elem.price >= 10491 && +elem.price <= 15597;
+    });
+    for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+    }
+  }
+
+  if (brandFilter14.checked === true) {
+    var tempArr = WomensData.filter(function (elem) {
+        return +elem.price >= 15597 && +elem.price <= 20703;
+    });
+    for (var i = 0; i < tempArr.length; i++) {
+        newArr.push(tempArr[i]);
+    }
+  }
+
+
+    if (
+      brandFilter1.checked == false &&
+      brandFilter2.checked == false &&
+      brandFilter3.checked == false &&
+      brandFilter4.checked == false &&
+      brandFilter5.checked == false &&
+      brandFilter6.checked == false &&
+      brandFilter7.checked == false &&
+      brandFilter8.checked == false &&
+      brandFilter9.checked == false &&
+      brandFilter10.checked == false &&
+      brandFilter11.checked == false &&
+      brandFilter12.checked == false &&
+      brandFilter13.checked == false &&
+      brandFilter14.checked == false
+    ) {
+      displayData(WomensData);
+    } else {
+      displayData(newArr);
+    }
+  });
+}
+
+
+
+
+
+
+
+
+
+// new change upper side
+
+
+
+
+
+
   function displayData(data) {
     document.getElementById("product").innerText = "";
     data.map(function (element, index) {

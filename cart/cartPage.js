@@ -41,7 +41,7 @@ function displayData(data){
 
         var prizediv= document.createElement("div");
         var price=document.createElement("p");
-        price.innerText="₹"+elem.price;
+        price.innerText="₹"+elem.price*elem.quantity;
         price.style.fontWeight="600";
         price.setAttribute("id","price")
         totalamt += (parseInt(elem.price))*(parseInt(elem.quantity));
