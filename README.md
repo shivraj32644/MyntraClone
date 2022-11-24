@@ -24,8 +24,8 @@
 <ol>
 <li><i><a href="https://www.linkedin.com/in/shivraj-dangi-203892232/" target="_blank">Shivraj Dangi</a></i></li>
 <li><i><a href="https://www.linkedin.com/in/bkabhi/" target="_blank">Abhijeet Sagar</a></i></li>
-<li><i><a href="https://www.linkedin.com/in/suraj-yadav-0b84601b2/" target="_blank">Mohd Umar </a></i></li>
-<li><i><a href="#" target="_blank">Aman Patel</a></i></li>
+<li><i><a href="https://www.linkedin.com/in/mohd-umar-91b07290/" target="_blank">Mohd Umar </a></i></li>
+<li><i><a href="https://www.linkedin.com/in/aman-kumar-patel-540a47169/" target="_blank">Aman Patel</a></i></li>
 <li><i><a href="https://www.linkedin.com/in/yogeshfullstack/" target="_blank">Yogesh Kumar</a></i></li>
 </ol>
 <h3>Work description-</h3>
