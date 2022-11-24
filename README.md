@@ -1,4 +1,4 @@
-# Olx-Clone
+# Myntra Clone
 
 <h1>Myntra Clone construct week project</h1>
 <h3>Description</h3>
