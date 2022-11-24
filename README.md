@@ -30,32 +30,42 @@
 <h3>Work description-</h3>
 <ul list-style-type="square">
 
-  <li><h5>Home Page</h5></br>
+  <li><h1>Home Page</h1></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/Homepage.png?raw=true" alt="home_page_img"/></div>
-<li><h5>Navigation Bar</h5></li></br>
+  </br>
+  </br>
+<li><h1>Navigation Bar</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/navigationbar.png?raw=true"  alt=""/></div>
   
-<li><h5>Login and Signup Pages</h5></li></br>
+  </br>
+  </br>
+<li><h1>Signup Page</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/Signup%20page.png?raw=true"  alt=""/></div>
+  </br></br>
+  
+<li><h1>Login Pages</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/Login%20page.png?raw=true"  alt=""/></div>
-  
-<li><h5>Men and Women Product Page </h5></li></br>
+  </br></br>
+<li><h1>Men Page </h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/mens%20product.png?raw=true"  alt=""/></div>
+  </br></br>
+<li><h1>Women Product Page </h1></li></br>
+  </br></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/women%20product%20page.png?raw=true"  alt=""/></div>
-  
-<li><h5>Cart Page</h5></li></br>
+  </br></br>
+<li><h1>Cart Page</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/CartPage.png?raw=true"  alt=""/></div>
- 
+ </br></br>
   
-<li><h5>Address</h5></li></br>
+<li><h1>Address</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/Address%20Page.png?raw=true"  alt=""/></div>
-  
-<li><h5>Payment</h5></li></br>
+  </br></br>
+<li><h1>Payment</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/PaymentPage.png?raw=true"  alt=""/></div>
-  
-<li><h5>Order Success Page</h5></li></br>
+  </br></br>
+<li><h1>Order Success Page</h1></li></br>
   <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/OrderSuccessFullpage.png?raw=true"  alt=""/></div>
-  
+  </br></br>
 </ul>
 <br/>
 </br>
