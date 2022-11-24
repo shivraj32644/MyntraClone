@@ -1,6 +1,6 @@
 # Olx-Clone
 
-<h1>Olx-Clone construct week project</h1>
+<h1>Myntra Clone construct week project</h1>
 <h3>Description</h3>
 <p><b>This is a collaborative project. Build using HTML, CSS, JS along with a team of 5 members in 7 days</b></p>
 <div><img src="https://github.com/shivraj32644/MyntraClone/blob/main/Assets/logomyntra.png?raw=true" height="300px" width="500px" alt=""></img></div>
