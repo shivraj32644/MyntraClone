@@ -1,4 +1,3 @@
-
 # Olx-Clone
 
 <h1>Olx-Clone construct week project</h1>
@@ -60,4 +59,3 @@
 </ul>
 <br/>
 </br>
-
